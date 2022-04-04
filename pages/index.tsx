@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import { Grid, Button } from '@nextui-org/react';
 import { useState, useEffect } from 'react';
 const Home: NextPage = () => {
+  type ColorType = "default" | "primary" | "secondary" | "success" | "warning" | "error" | "gradient" | "white"
   const router = useRouter();
   const [mobile, setMobile] = useState(false);
 	const [width, setWidth] = useState(764);
@@ -45,11 +46,13 @@ const Home: NextPage = () => {
           <p>Georgia is brown... the oppsite of green</p>
           <Button css={{
             margin: '0 auto',
-          }} color="white" onClick={() => {
+            color: 'black',
+            backgroundColor: "white",
+          }}  onClick={() => {
             router.push('/#learn');
           }}>Learn More</Button>
         </div>
-        <p className="caption"> <i className='bx bxs-map'></i> Augusta, Georgia </p>
+        {/* <p className="caption"> <i className='bx bxs-map'></i> Augusta, Georgia </p> https://unsplash.com/photos/Tss1uOMczDg */ }
       </div>
       <div className="content">
         <div className="items">

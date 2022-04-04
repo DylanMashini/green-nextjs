@@ -3,17 +3,18 @@ import Link from "next/link";
 
 import { useState } from "react";
 import styled from "styled-components";
+import styles from "../styles/Navbar.module.css";
 
 export default function Navbar({ mobile }) {
 	
 	const [open, setOpen] = useState(false);
 
 	if (mobile) {
-		const StyledMenu = styled.nav`
+		const StyledMenu = styled.div`
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			background: #effffa;
+			background-color: rgba(0, 0, 0, 0.5);
 			transform: ${({ open }) =>
 				open ? "translateX(0)" : "translateX(-100%)"};
 			height: 100vh;
@@ -34,7 +35,7 @@ export default function Navbar({ mobile }) {
 				padding: 2rem 0;
 				font-weight: bold;
 				letter-spacing: 0.5rem;
-				color: #0d0c1d;
+				color: white;
 				text-decoration: none;
 				transition: color 0.3s linear;
 
@@ -45,6 +46,7 @@ export default function Navbar({ mobile }) {
 
 				&:hover {
 					color: #343078;
+					
 				}
 			}
 		`;
@@ -65,6 +67,7 @@ export default function Navbar({ mobile }) {
 						<a>Button 4</a>
 					</Link>
 				</StyledMenu>
+				
 			);
 		};
 
@@ -90,7 +93,7 @@ export default function Navbar({ mobile }) {
 			div {
 				width: 2rem;
 				height: 0.25rem;
-				background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
+				background: ${({ open }) => (open ? "#EFFFFA" : "#EFFFFA")};
 				border-radius: 10px;
 				transition: all 0.3s linear;
 				position: relative;
@@ -144,12 +147,22 @@ export default function Navbar({ mobile }) {
 	}
 	return (
 		<div className={"navbar"}>
+			
 			<Grid.Container>
+				<div className={styles.dropdown}>
 				<Grid>
 					<Link href="/">
 						<h3 className="nav-item">Home</h3>
 					</Link>
 				</Grid>
+				<div className={styles.spacer} />
+				<div className={styles.dropdownContent}>
+					<Link href="/">
+						<p className={styles.item}>Thing 1</p>
+					</Link>
+					
+				</div>
+				</div>
 				<Grid>
 					<Link href="/#projects">
 						<h3 className="nav-item">Button 2</h3>
