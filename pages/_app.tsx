@@ -6,6 +6,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<>
 			<Head>
 				<link
+					rel="shortcut icon"
+					type="image/png"
+					href="/favicon.png"
+				/>
+				<link
 					href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
 					rel="stylesheet"
 				/>
