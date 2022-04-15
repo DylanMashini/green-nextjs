@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import Navbar from "../components/Navbar";
-import { Grid, Button } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import ThreeDisplay from "../components/ThreeDisplay";
+import Hero from "../components/Hero";
 const Home: NextPage = () => {
 	type ColorType =
 		| "default"
@@ -40,45 +39,28 @@ const Home: NextPage = () => {
 			getMobile();
 		});
 	}
+	const pagesToPrefetch = ["/solarize"];
+	useEffect(() => {
+		pagesToPrefetch.forEach(page => {
+			router.prefetch(page);
+		});
+	});
 	return (
 		<div>
 			<Head>
 				<title>Home</title>
 			</Head>
 			<Navbar mobile={mobile} />
-			<div className="hero">
-				<Image
-					src="/header1.jpeg"
-					layout="fill"
-					objectFit="cover"
-					style={{ zIndex: -1, width: "100vw" }}
-				/>
-				<div>
-					<h1>A Sustainable Cobb</h1>
-					<p>
-						Each one of us can live comfortably with habits that
-						help our planet . Join us in creating opportunities to
-						make Cobb County the most sustainable county in Georgia,
-						all through small habit changes!
-					</p>
-					<Button
-						css={{
-							margin: "0 auto",
-							color: "black",
-							backgroundColor: "#ffc916ff",
-						}}
-						onClick={() => {
-							router.push("/#learn");
-						}}
-					>
-						Learn More
-					</Button>
-				</div>
-				{/* <p className="caption">
-					{" "}
-					<i className="bx bxs-map"></i> Augusta, Georgia{" "}
-				</p>{" "} */}
-			</div>
+			<Hero
+				ImageSrc={"/header1.jpeg"}
+				Header="A Sustainable Cobb"
+				Text="Each one of us can live comfortably with habits that help
+					our planet . Join us in creating opportunities to make Cobb
+					County the most sustainable county in Georgia, all through
+					small habit changes!"
+				ButtonText="Learn More"
+				ButtonLink="#learn"
+			/>
 			<div className={`content${mobile ? " mobile" : ""}`}>
 				<div>
 					<div
@@ -107,6 +89,7 @@ const Home: NextPage = () => {
 					"/content/solar1.jpeg",
 					"/content/river.jpeg",
 				]}
+				buttonLinks={["/#", "/solarize", "/#"]}
 				mobile={mobile}
 			/>
 		</div>

@@ -1,8 +1,15 @@
 import Image from "next/image";
 import styles from "../styles/ThreeDisplay.module.css";
 import { Button } from "@nextui-org/react";
-
-export default function ThreeDisplay({ headers, text, images, mobile }) {
+import { Router, useRouter } from "next/router";
+export default function ThreeDisplay({
+	headers,
+	text,
+	images,
+	buttonLinks,
+	mobile,
+}) {
+	const router = useRouter();
 	return (
 		<div>
 			<div
@@ -35,6 +42,9 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 							css={{
 								backgroundColor: "#1A5B92",
 							}}
+							onClick={() => {
+								router.push(buttonLinks[0]);
+							}}
 						>
 							Learn More
 						</Button>
@@ -65,6 +75,9 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 							css={{
 								backgroundColor: "#1A5B92",
 							}}
+							onClick={() => {
+								router.push(buttonLinks[1]);
+							}}
 						>
 							Learn More
 						</Button>
@@ -94,6 +107,9 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 						<Button
 							css={{
 								backgroundColor: "#1A5B92",
+							}}
+							onClick={() => {
+								router.push(buttonLinks[2]);
 							}}
 						>
 							Learn More
