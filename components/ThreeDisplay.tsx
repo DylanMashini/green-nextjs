@@ -43,7 +43,7 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 						}`}
 					>
 						<Image
-							src={images[0]}
+							src={images[1]}
 							layout="fill"
 							objectFit="cover"
 						/>
@@ -53,8 +53,8 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 							mobile ? styles["mobile"] : ""
 						}`}
 					>
-						<h3>{headers[0]}</h3>
-						<h4>{text[0]}</h4>
+						<h3>{headers[1]}</h3>
+						<h4>{text[1]}</h4>
 						<Button>Learn More</Button>
 					</div>
 				</div>
@@ -67,7 +67,7 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 						}`}
 					>
 						<Image
-							src={images[0]}
+							src={images[2]}
 							layout="fill"
 							objectFit="cover"
 						/>
@@ -77,8 +77,8 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 							mobile ? styles["mobile"] : ""
 						}`}
 					>
-						<h3>{headers[0]}</h3>
-						<h4>{text[0]}</h4>
+						<h3>{headers[2]}</h3>
+						<h4>{text[2]}</h4>
 						<Button>Learn More</Button>
 					</div>
 				</div>
