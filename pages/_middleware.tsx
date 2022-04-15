@@ -33,6 +33,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
 			return response;
 		}
 	} else {
+		console.log(req.url);
 		const response = Response.redirect(`${server}/login`, 307);
 		return response;
 	}
