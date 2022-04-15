@@ -40,8 +40,9 @@ export default function Solarize() {
 				ButtonLink={"/solarize"}
 				mobile={mobile}
 			/>
-			<div className="content">
+			<div className={`content${mobile ? " solar mobile" : ""}`}>
 				<div
+					className={`solar${mobile ? " mobile" : ""}`}
 					style={{
 						display: "flex",
 						flexDirection: "row",
@@ -105,7 +106,11 @@ export default function Solarize() {
 					</Link>
 				</div>
 			</div>
-			<div className={styles["section-1"]}>
+			<div
+				className={`${styles["section-1"]} ${
+					mobile ? styles["mobile"] : ""
+				}`}
+			>
 				<h1
 					style={{
 						textAlign: "center",

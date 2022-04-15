@@ -113,6 +113,9 @@ a {
 	width: 100vw;
 	padding-left: 4vw;
 }
+.content.solar.mobile {
+	background-color: #195c92 !important;
+}
 .content.mobile h2 {
 	font-size: 1rem;
 }
@@ -120,7 +123,10 @@ a {
 	color: white;
 	font-family: 'Lato', sans-serif;
 }
-
+.solar.mobile {
+	flex-direction: column !important;
+	height: 100vh !important;
+}
 
 .clickable {
 	cursor: pointer;
