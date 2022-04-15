@@ -145,18 +145,44 @@ export default function Navbar({ mobile }) {
 		};
 
 		return (
-			<nav
-				className={"navbar"}
-				style={{
-					justifyContent: "left",
-					alignItems: "left",
-				}}
-			>
-				<Grid.Container>
-					<Burger open={open} setOpen={setOpen} />
-				</Grid.Container>
-				<Menu open={open}></Menu>
-			</nav>
+			<>
+				<nav
+					className={"navbar"}
+					style={{
+						justifyContent: "left",
+						alignItems: "left",
+					}}
+				>
+					<Grid.Container>
+						<Burger open={open} setOpen={setOpen} />
+					</Grid.Container>
+					<Menu open={open}></Menu>
+					<Link href="/donate">
+						<div
+							style={{
+								marginRight: "2em",
+								width: "100px",
+								height: "30px",
+								outlineColor: "white",
+								outlineWidth: "2px",
+								outlineStyle: "solid",
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+								cursor: "pointer",
+							}}
+						>
+							<h4
+								style={{
+									color: "white",
+								}}
+							>
+								Donate
+							</h4>
+						</div>
+					</Link>
+				</nav>
+			</>
 		);
 	}
 	return (
@@ -274,7 +300,7 @@ export default function Navbar({ mobile }) {
 					</div>
 				</div>
 			</Grid.Container>
-			<Link href="/#donate">
+			<Link href="/donate">
 				<div
 					style={{
 						marginRight: "2em",
