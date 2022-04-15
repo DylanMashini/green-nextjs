@@ -112,6 +112,7 @@ a {
 	height: 20vh;
 	width: 100vw;
 	padding-left: 4vw;
+	overflow: hidden;
 }
 .content.solar.mobile {
 	background-color: #195c92 !important;
