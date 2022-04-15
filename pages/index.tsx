@@ -44,10 +44,6 @@ const Home: NextPage = () => {
 		<div>
 			<Head>
 				<title>Home</title>
-				<link
-					href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-					rel="stylesheet"
-				/>
 			</Head>
 			<Navbar mobile={mobile} />
 			<div className="hero">
@@ -55,7 +51,7 @@ const Home: NextPage = () => {
 					src="/header1.jpeg"
 					layout="fill"
 					objectFit="cover"
-					style={{ zIndex: -1 }}
+					style={{ zIndex: -1, width: "100vw" }}
 				/>
 				<div>
 					<h1>A Sustainable Cobb</h1>
@@ -111,6 +107,7 @@ const Home: NextPage = () => {
 					"/greenForest.jpeg",
 					"/greenForest.jpeg",
 				]}
+				mobile={mobile}
 			/>
 		</div>
 	);

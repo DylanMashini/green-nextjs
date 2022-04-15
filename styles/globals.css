@@ -10,7 +10,9 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-
+div {
+	overflow-x: hidden;
+}
 a {
 	color: inherit;
 	text-decoration: none;
@@ -62,6 +64,7 @@ a {
 	text-align: left;
 	height: 100vh;
 	background-size: cover;
+	word-wrap: break-word;
 
 }
 .hero h1 {
@@ -74,7 +77,6 @@ a {
 	width: 40rem;
 }
 .hero button {
-	
 	margin-left: 8vw;
 	
 }
