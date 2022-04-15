@@ -15,7 +15,7 @@
     backdrop-filter: blur(10px);
     width: 15em;
     margin-left: 0.5vw;
-    height: 11vh;
+    min-height: 11vh;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -25,8 +25,7 @@
 
 .item {
     color: #fff;
-    font-family: 'Lato',
-    sans-serif;
+    font-family: 'Lato';
     display: block;
     padding: 0.5vh;
     font-size: 1em;

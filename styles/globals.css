@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
+
 html,
 body {
 	padding: 0;
@@ -24,6 +27,7 @@ a {
 }
 .nav-item {
 	color: white;
+	font-family: 'Lato';
 }
 .nav-item:hover {
 	text-decoration: underline;
@@ -52,16 +56,27 @@ a {
 	right: 0;
 	bottom: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 	z-index: -1;
-	text-align: center;
-	height: 94vh;
-	/* background-image: url("../public/greenForest.jpeg"); */
+	text-align: left;
+	height: 100vh;
 	background-size: cover;
+
 }
-.hero div {
-	padding-bottom: 15vh;
+.hero h1 {
+	margin-left: 8vw;
+	font-size: 2.5rem;
+}
+.hero p {
+	font-size: 2rem;
+	margin-left: 8vw;
+	width: 40rem;
+}
+.hero button {
+	
+	margin-left: 8vw;
+	
 }
 .hero h1 {
 	font-size: 3rem;
@@ -83,32 +98,22 @@ a {
 
 .content {
 	position: absolute;
-	background-color: #8d8741;
-	text-align: center;
-	margin-top: 94vh;
-	height: 40vh;
+	background-color: #195b92d1;
+	text-align: left;
+	margin-top: 80vh;
+	height: 20vh;
 	width: 100vw;
+	padding-left: 4vw;
 }
-.content .items {
-	margin-top: 10vh;
-	/* display: inline-block; */
-	display: flex;
-	width: 100%;
-	height: 100%;
+.content h2 {
+	color: white;
+	font-family: 'Lato', sans-serif;
 }
-.content .items .item {
-	width: 50%;
-	height: 100%;
-	/* background-color: blue; */
-	justify-content: left;
-}
-.content .items .item h1,
-h2,
-h3 {
-	color: #fff;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.content h1 {
+	color: white;
+	font-family: 'Lato', sans-serif;
 }
 
-.content .items .item:nth-child(2) {
-	margin-right: 4vw;
+.clickable {
+	cursor: pointer;
 }

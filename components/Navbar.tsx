@@ -4,10 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 import styled from "styled-components";
 import styles from "../styles/Navbar.module.css";
+import Image from "next/image";
 
 export default function Navbar({ mobile }) {
-	
 	const [open, setOpen] = useState(false);
+	const [open2, setOpen2] = useState(false);
 
 	if (mobile) {
 		const StyledMenu = styled.div`
@@ -46,7 +47,6 @@ export default function Navbar({ mobile }) {
 
 				&:hover {
 					color: #343078;
-					
 				}
 			}
 		`;
@@ -57,17 +57,32 @@ export default function Navbar({ mobile }) {
 					<Link href="/">
 						<a>Home</a>
 					</Link>
-					<Link href="/#Projects">
-						<a>Button 2</a>
-					</Link>
+
+					<a
+						onClick={() => {
+							console.log("pressed");
+							setOpen2(!open2);
+						}}
+					>
+						Button 2<i className="bx bx-chevron-down"></i>
+					</a>
+
+					{open2 ? (
+						<Link href="/">
+							<a>{"	"}Test</a>
+						</Link>
+					) : null}
 					<Link href="/#about">
-						<a>Button 3</a>
+						<a>
+							Button 3<i className="bx bx-chevron-down"></i>
+						</a>
 					</Link>
 					<Link href="/#contact">
-						<a>Button 4</a>
+						<a>
+							Button 4<i className="bx bx-chevron-down"></i>
+						</a>
 					</Link>
 				</StyledMenu>
-				
 			);
 		};
 
@@ -125,7 +140,6 @@ export default function Navbar({ mobile }) {
 						<div />
 						<div />
 					</StyledBurger>
-					
 				</div>
 			);
 		};
@@ -147,39 +161,144 @@ export default function Navbar({ mobile }) {
 	}
 	return (
 		<div className={"navbar"}>
-			
 			<Grid.Container>
+				<Grid>
+					<div
+						style={{
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+							height: "100%",
+							marginLeft: "1vw",
+						}}
+					>
+						<Link href="/#">
+							{/* desired height of 50 */}
+							<Image
+								className="nav-item"
+								src="/logo.png"
+								width="73"
+								height="50"
+							/>
+						</Link>
+					</div>
+				</Grid>
+
 				<div className={styles.dropdown}>
-				<Grid>
-					<Link href="/">
-						<h3 className="nav-item">Home</h3>
-					</Link>
-				</Grid>
-				<div className={styles.spacer} />
-				<div className={styles.dropdownContent}>
-					<Link href="/">
-						<p className={styles.item}>Thing 1</p>
-					</Link>
-					
+					<Grid>
+						<Link href="/#projects">
+							<h3 className="nav-item">Programs</h3>
+						</Link>
+					</Grid>
+					<div className={styles.spacer} />
+					<div className={styles.dropdownContent}>
+						<Link href="/#programs">
+							<a className={styles.item}>Solar</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Recycling</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Composting</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Food and Agriculture</a>
+						</Link>
+					</div>
 				</div>
+				<div className={styles.dropdown}>
+					<Grid>
+						<Link href="/#about">
+							<h3 className="nav-item">Your actions matter!</h3>
+						</Link>
+					</Grid>
+					<div className={styles.spacer} />
+					<div className={styles.dropdownContent}>
+						<Link href="/#programs">
+							<a className={styles.item}>Example 1</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Example 2</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Example 3</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Example 4</a>
+						</Link>
+					</div>
 				</div>
-				<Grid>
-					<Link href="/#projects">
-						<h3 className="nav-item">Button 2</h3>
-					</Link>
-				</Grid>
-				<Grid>
-					<Link href="/#about">
-						<h3 className="nav-item">Button 3</h3>
-					</Link>
-				</Grid>
-				<Grid>
-					<Link href="/#contact">
-						<h3 className="nav-item">Button 4</h3>
-					</Link>
-				</Grid>
+				<div className={styles.dropdown}>
+					<Grid>
+						<Link href="/#contact">
+							<h3 className="nav-item">Partners</h3>
+						</Link>
+					</Grid>
+					<div className={styles.spacer} />
+					<div className={styles.dropdownContent}>
+						<Link href="/#programs">
+							<a className={styles.item}>Drawdown GA</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Keep Cobb Beautiful</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Cheers to Recycling</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Kelli Green</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>
+								Metro Building Projects
+							</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Become a Partner</a>
+						</Link>
+					</div>
+				</div>
+				<div className={styles.dropdown}>
+					<Grid>
+						<Link href="/#about">
+							<h3 className="nav-item">About Us</h3>
+						</Link>
+					</Grid>
+					<div className={styles.spacer} />
+					<div className={styles.dropdownContent}>
+						<Link href="/#programs">
+							<a className={styles.item}>Team</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Location</a>
+						</Link>
+					</div>
+				</div>
 			</Grid.Container>
-			
+			<Link href="/#donate">
+				<div
+					style={{
+						marginRight: "2em",
+						width: "100px",
+						height: "30px",
+						outlineColor: "white",
+						outlineWidth: "2px",
+						outlineStyle: "solid",
+						display: "flex",
+						justifyContent: "center",
+						alignItems: "center",
+						cursor: "pointer",
+					}}
+				>
+					<h4
+						style={{
+							color: "white",
+						}}
+					>
+						Donate
+					</h4>
+				</div>
+			</Link>
 		</div>
 	);
 }

@@ -1,0 +1,62 @@
+.three-partition {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    height: 30vh;
+    width: 100vw;
+    margin-top: 100vh;
+
+}
+
+.wrapper {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    margin-top: 5%;
+    height: 26vh;
+    width: 30vw;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.item-content h4 {
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 0;
+    width: 80%;
+}
+.item-content h3 {
+    font-family: 'Roboto Condensed';
+    margin-bottom: 0.5em;
+}
+.item {
+    height: 100%;
+    width: 30vw;
+    margin-right: 2vw;
+    margin-left:2vw;
+
+
+}
+
+.item-content {
+    width: 25vw;
+    text-align: left;
+    flex-direction: column;
+    margin: auto;
+    display: block;
+    padding: auto;
+    position: absolute;
+    margin-top: 37vh;
+}
