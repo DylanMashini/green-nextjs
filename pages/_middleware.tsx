@@ -3,9 +3,16 @@ import server from "../server";
 
 export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
 	if (req.url.includes("localhost")) {
-		return null;
+		// return null;
 	}
-	const allowed = ["/api/hash", "/api/compare", "/favicon.png", "/login"];
+	const allowed = [
+		"/api/hash",
+		"/api/compare",
+		"/favicon.png",
+		"/login",
+		"/api/hash/",
+		"/api/compare/",
+	];
 	if (req.cookies.auth || allowed.includes(req.page.name)) {
 		const pw = req.cookies.auth;
 		const correctPw =
