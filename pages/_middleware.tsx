@@ -2,8 +2,8 @@ import type { NextFetchEvent, NextRequest } from "next/server";
 import server from "../server";
 
 export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
-	if (server == "http://localhost:3000") {
-		// return null;
+	if (req.url.includes("localhost")) {
+		return null;
 	}
 	const allowed = ["/api/hash", "/api/compare", "/favicon.png", "/login"];
 	if (req.cookies.auth || allowed.includes(req.page.name)) {
