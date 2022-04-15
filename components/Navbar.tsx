@@ -145,7 +145,7 @@ export default function Navbar({ mobile }) {
 		};
 
 		return (
-			<div
+			<nav
 				className={"navbar"}
 				style={{
 					justifyContent: "left",
@@ -156,7 +156,7 @@ export default function Navbar({ mobile }) {
 					<Burger open={open} setOpen={setOpen} />
 				</Grid.Container>
 				<Menu open={open}></Menu>
-			</div>
+			</nav>
 		);
 	}
 	return (
