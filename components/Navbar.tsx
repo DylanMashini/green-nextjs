@@ -173,7 +173,6 @@ export default function Navbar({ mobile }) {
 						}}
 					>
 						<Link href="/#">
-							{/* desired height of 50 */}
 							<Image
 								className="nav-item"
 								src="/logo.png"

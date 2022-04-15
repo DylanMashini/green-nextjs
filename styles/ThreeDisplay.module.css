@@ -31,7 +31,7 @@
 }
 
 .picture.mobile {
-    height: 50vh;
+    height: 40vh;
     width: 80vw;
     margin-left: auto;
     margin-left: 10vw;
@@ -41,7 +41,7 @@
 .item-content.mobile {
     height: 50vh;
     width: 80vw;
-    margin-top: 50vh;
+    margin-top: 40vh;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -80,9 +80,7 @@
 .three-partition.mobile {
     flex-direction: column;
 }
-.wrapper.mobile {
-    flex-direction: column;
-}
+
 .item.mobile {
     width: 100vw;
     height:80vh;

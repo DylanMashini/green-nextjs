@@ -31,7 +31,13 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 					>
 						<h3>{headers[0]}</h3>
 						<h4>{text[0]}</h4>
-						<Button>Learn More</Button>
+						<Button
+							css={{
+								backgroundColor: "#1A5B92",
+							}}
+						>
+							Learn More
+						</Button>
 					</div>
 				</div>
 				<div
@@ -55,7 +61,13 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 					>
 						<h3>{headers[1]}</h3>
 						<h4>{text[1]}</h4>
-						<Button>Learn More</Button>
+						<Button
+							css={{
+								backgroundColor: "#1A5B92",
+							}}
+						>
+							Learn More
+						</Button>
 					</div>
 				</div>
 				<div
@@ -79,7 +91,13 @@ export default function ThreeDisplay({ headers, text, images, mobile }) {
 					>
 						<h3>{headers[2]}</h3>
 						<h4>{text[2]}</h4>
-						<Button>Learn More</Button>
+						<Button
+							css={{
+								backgroundColor: "#1A5B92",
+							}}
+						>
+							Learn More
+						</Button>
 					</div>
 				</div>
 			</div>

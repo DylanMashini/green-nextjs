@@ -107,14 +107,14 @@ a {
 	width: 100vw;
 	padding-left: 4vw;
 }
+.content.mobile h2 {
+	font-size: 1rem;
+}
 .content h2 {
 	color: white;
 	font-family: 'Lato', sans-serif;
 }
-.content h1 {
-	color: white;
-	font-family: 'Lato', sans-serif;
-}
+
 
 .clickable {
 	cursor: pointer;
