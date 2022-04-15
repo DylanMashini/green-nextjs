@@ -51,7 +51,6 @@
     font-size: 1rem;
     text-align: left;
     margin-top: 0;
-    width: 80%;
 }
 .item-content h3 {
     font-family: 'Roboto Condensed';
@@ -67,7 +66,7 @@
 }
 
 .item-content {
-    width: 25vw;
+    width: 30vw;
     text-align: left;
     flex-direction: column;
     margin: auto;
