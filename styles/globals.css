@@ -76,6 +76,12 @@ a {
 	margin-left: 8vw;
 	width: 40rem;
 }
+.hero-mobile-text {
+	font-size: 1rem !important;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	width: 90vw !important;
+}
 .hero button {
 	margin-left: 8vw;
 	

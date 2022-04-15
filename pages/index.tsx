@@ -60,6 +60,7 @@ const Home: NextPage = () => {
 					small habit changes!"
 				ButtonText="Learn More"
 				ButtonLink="#learn"
+				mobile={mobile}
 			/>
 			<div className={`content${mobile ? " mobile" : ""}`}>
 				<div>

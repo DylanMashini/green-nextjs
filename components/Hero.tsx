@@ -7,6 +7,7 @@ export default function Hero({
 	ImageSrc,
 	ButtonText,
 	ButtonLink,
+	mobile,
 }) {
 	const router = useRouter();
 	return (
@@ -19,7 +20,7 @@ export default function Hero({
 			/>
 			<div>
 				<h1>{Header}</h1>
-				<p>{Text}</p>
+				<p className={mobile ? "hero-mobile-text" : ""}>{Text}</p>
 				<Button
 					css={{
 						margin: "0 auto",

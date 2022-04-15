@@ -38,6 +38,7 @@ export default function Solarize() {
 				ButtonText={"Learn More"}
 				ImageSrc="/content/solar1.jpeg"
 				ButtonLink={"/solarize"}
+				mobile={mobile}
 			/>
 			<div className="content">
 				<div
