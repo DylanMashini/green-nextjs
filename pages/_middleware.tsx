@@ -13,7 +13,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
 		"/api/hash/",
 		"/api/compare/",
 	];
-	if (req.cookies.auth || allowed.includes(req.page.name)) {
+	if (req.cookies.auth || allowed.includes(req.nextUrl.pathname)) {
 		const pw = req.cookies.auth;
 		const correctPw =
 			"$2a$12$Nh7EiRjbujfmVmrrAtRsKOnNf/bpEsl..Pwzlh4lSYvxSq7eudpZW";
@@ -25,7 +25,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
 				},
 				body: JSON.stringify({ a: pw, b: correctPw }),
 			})) ||
-			allowed.includes(req.page.name)
+			allowed.includes(req.nextUrl.pathname)
 		) {
 			return null;
 		} else {
