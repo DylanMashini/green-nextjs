@@ -170,6 +170,7 @@ export default function Navbar({ mobile }) {
 								justifyContent: "center",
 								alignItems: "center",
 								cursor: "pointer",
+								overflow: "hidden",
 							}}
 						>
 							<h4
@@ -313,6 +314,7 @@ export default function Navbar({ mobile }) {
 						justifyContent: "center",
 						alignItems: "center",
 						cursor: "pointer",
+						overflow: "hidden",
 					}}
 				>
 					<h4
