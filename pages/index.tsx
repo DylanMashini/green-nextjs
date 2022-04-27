@@ -86,7 +86,7 @@ const Home: NextPage = () => {
 					"Using the framework developed by Drawdown Georgia, we show how each person in Cobb can make an impact.",
 				]}
 				images={[
-					"/content/picture1.png",
+					"/content/picture1.jpeg",
 					"/content/solar1.jpeg",
 					"/content/river.jpeg",
 				]}

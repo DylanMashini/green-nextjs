@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
 html,
 body {
 	padding: 0;
@@ -40,7 +39,7 @@ a {
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(54, 54, 54, 0.5);
+	background-color: rgba(33, 33, 33, 0.85);
 	backdrop-filter: blur(10px);
 	height: 4em;
 	text-align: right;
@@ -48,6 +47,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .hero {
@@ -85,6 +85,9 @@ a {
 .hero button {
 	margin-left: 8vw;
 	
+}
+.hero .rightButton {
+	margin-left: 2vw !important;
 }
 .hero h1 {
 	font-size: 3rem;
@@ -131,4 +134,7 @@ a {
 
 .clickable {
 	cursor: pointer;
+}
+.Raleway {
+	font-family: 'Raleway', sans-serif;
 }
