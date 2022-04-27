@@ -32,12 +32,7 @@ export default function Programs() {
 	return (
 		<div>
 			<Navbar mobile={mobile} />
-			<Hero
-				ImageSrc="/content/dropsOnLeaf.jpeg"
-				ButtonLink=""
-				ButtonText=""
-				mobile={mobile}
-			>
+			<Hero ImageSrc="/content/dropsOnLeaf.jpeg" mobile={mobile}>
 				<div
 					style={{
 						display: "flex",

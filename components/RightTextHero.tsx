@@ -2,13 +2,7 @@ import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { useRouter } from "next/router";
 
-export default function Hero({
-	ImageSrc,
-	ButtonText,
-	ButtonLink,
-	mobile,
-	children,
-}) {
+export default function Hero({ ImageSrc, mobile, children }) {
 	const router = useRouter();
 	return (
 		<div className="hero">

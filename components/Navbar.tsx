@@ -1,6 +1,5 @@
 import { Grid } from "@nextui-org/react";
 import Link from "next/link";
-
 import { useState } from "react";
 import styled from "styled-components";
 import styles from "../styles/Navbar.module.css";
