@@ -14,7 +14,7 @@ export default function Hero({ ImageSrc, mobile, children }) {
 			/>
 			<div
 				style={{
-					width: "100vw;",
+					width: "100vw",
 				}}
 			>
 				{children}

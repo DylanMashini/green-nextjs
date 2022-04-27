@@ -150,13 +150,14 @@ export default function Navbar({ mobile }) {
 					style={{
 						justifyContent: "left",
 						alignItems: "left",
+						overflow: "visible",
 					}}
 				>
 					<Grid.Container>
 						<Burger open={open} setOpen={setOpen} />
 					</Grid.Container>
 					<Menu open={open}></Menu>
-					<Link href="/donate">
+					{/* <Link href="/donate">
 						<div
 							style={{
 								marginRight: "2em",
@@ -180,15 +181,14 @@ export default function Navbar({ mobile }) {
 								Donate
 							</h4>
 						</div>
-					</Link>
+					</Link> */}
 				</nav>
 			</>
 		);
 	}
 	return (
 		<div className={"navbar"}>
-			<Grid.Container>
-				<Grid>
+			<Grid>
 					<div
 						style={{
 							display: "flex",
@@ -202,20 +202,23 @@ export default function Navbar({ mobile }) {
 							<Image
 								className="nav-item"
 								src="/logo.png"
-								width="73"
-								height="50"
+								width="85"
+								height="62"
 							/>
 						</Link>
 					</div>
 				</Grid>
+			<Grid.Container justify="flex-end" style={{
+				marginRight: "2em",
+			}}>
 
 				<div className={styles.dropdown}>
 					<Grid>
-						<Link href="/#projects">
-							<h3 className="nav-item">Programs</h3>
+						<Link href="/approach">
+							<h3 className="nav-item">Our Approach</h3>
 						</Link>
 					</Grid>
-					<div className={styles.spacer} />
+					{/* <div className={styles.spacer} />
 					<div className={styles.dropdownContent}>
 						<Link href="/#programs">
 							<a className={styles.item}>Solar</a>
@@ -229,15 +232,15 @@ export default function Navbar({ mobile }) {
 						<Link href="/#programs">
 							<a className={styles.item}>Food and Agriculture</a>
 						</Link>
-					</div>
+					</div> */}
 				</div>
 				<div className={styles.dropdown}>
 					<Grid>
-						<Link href="/#about">
-							<h3 className="nav-item">Your actions matter!</h3>
+						<Link href="/programs">
+							<h3 className="nav-item">Programs</h3>
 						</Link>
 					</Grid>
-					<div className={styles.spacer} />
+					{/* <div className={styles.spacer} />
 					<div className={styles.dropdownContent}>
 						<Link href="/#programs">
 							<a className={styles.item}>Example 1</a>
@@ -251,15 +254,15 @@ export default function Navbar({ mobile }) {
 						<Link href="/#programs">
 							<a className={styles.item}>Example 4</a>
 						</Link>
-					</div>
+					</div> */}
 				</div>
 				<div className={styles.dropdown}>
 					<Grid>
-						<Link href="/#contact">
-							<h3 className="nav-item">Partners</h3>
+						<Link href="/about">
+							<h3 className="nav-item">About Us</h3>
 						</Link>
 					</Grid>
-					<div className={styles.spacer} />
+					{/* <div className={styles.spacer} />
 					<div className={styles.dropdownContent}>
 						<Link href="/#programs">
 							<a className={styles.item}>Drawdown GA</a>
@@ -281,26 +284,43 @@ export default function Navbar({ mobile }) {
 						<Link href="/#programs">
 							<a className={styles.item}>Become a Partner</a>
 						</Link>
-					</div>
+					</div> */}
 				</div>
 				<div className={styles.dropdown}>
 					<Grid>
 						<Link href="/#about">
-							<h3 className="nav-item">About Us</h3>
+							<h3 className="nav-item">Partner</h3>
 						</Link>
 					</Grid>
 					<div className={styles.spacer} />
-					<div className={styles.dropdownContent}>
+					{/* <div className={styles.dropdownContent}>
 						<Link href="/#programs">
 							<a className={styles.item}>Team</a>
 						</Link>
 						<Link href="/#programs">
 							<a className={styles.item}>Location</a>
 						</Link>
-					</div>
+					</div> */}
+				</div>
+
+				<div className={styles.dropdown}>
+					<Grid>
+						<Link href="/Join">
+							<h3 className="nav-item">Join Us</h3>
+						</Link>
+					</Grid>
+					<div className={styles.spacer} />
+					{/* <div className={styles.dropdownContent}>
+						<Link href="/#programs">
+							<a className={styles.item}>Team</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Location</a>
+						</Link>
+					</div> */}
 				</div>
 			</Grid.Container>
-			<Link href="/donate">
+			{/* <Link href="/donate">
 				<div
 					style={{
 						marginRight: "2em",
@@ -324,7 +344,7 @@ export default function Navbar({ mobile }) {
 						Donate
 					</h4>
 				</div>
-			</Link>
+			</Link> */}
 		</div>
 	);
 }

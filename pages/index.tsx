@@ -59,7 +59,7 @@ const Home: NextPage = () => {
 					County the most sustainable county in Georgia, all through
 					small habit changes!"
 				ButtonText="Learn More"
-				ButtonLink="#learn"
+				ButtonLink="/programs"
 				mobile={mobile}
 			/>
 			<div className={`content${mobile ? " mobile" : ""}`}>

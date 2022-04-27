@@ -59,7 +59,7 @@ export default function Programs() {
 								borderRadius: "1px",
 							}}
 						/>
-						<h2>
+						{!mobile ? (<h2>
 							Our Electricity, Recycling, and Food & Agriculture
 							Programs combined have the potential to{"\n"}
 							<span
@@ -74,7 +74,22 @@ export default function Programs() {
 							by 2030. That is equal to removing 118,508
 							gasoline-powered cars from the road for an entire
 							year.​
-						</h2>
+						</h2>): (<h2 style={{
+							fontSize: "1em"
+						}}>
+							Our Electricity, Recycling, and Food & Agriculture
+							Programs combined have the potential to {" "} <span
+								style={{
+									fontSize: "1.3em",
+								}}
+							>
+								reduce over 550,000 metric tons of CO2
+								equivalent
+							</span>{" "}
+							by 2030. That is equal to removing 118,508
+							gasoline-powered cars from the road for an entire
+							year.​
+						</h2>)}
 					</div>
 					<Button
 						className="rightButton"
@@ -91,6 +106,59 @@ export default function Programs() {
 					</Button>
 				</div>
 			</Hero>
+			{!mobile ? <div className="content">
+				<div style={{
+					display: "flex",
+					justifyContent: "space-around",
+					alignItems: "center",
+					height: "20vh",
+					overflow: "hidden"
+				}}>
+					<div style={{
+						maxWidth: "25vw",
+					}}>
+						<h1 style={{
+							color: "white",
+						}}>
+							Electricity
+						</h1>
+						<h3 style={{
+							color: "white",
+						}}>
+						Our goal is to reduce over 100,000 metric tons of CO2 equivalent by 2030 through empowering Cobb County to install smart thermostats, rooftop solar, and shifting energy use to off-peak times.
+						</h3>
+					</div>
+					<div style={{
+						maxWidth: "25vw",
+					}}>
+						<h1 style={{
+							color: "white",
+						}}>
+							Recycling
+						</h1>
+						<h3 style={{
+							color: "white",
+						}}>
+						Our goal is to reduce over 300,000 metric tons CO2 equivalent by 2030 through increased access to recycling infrastructure in Cobb County businesses, sporting and entertainment venues.						</h3>
+					</div>
+					<div style={{
+						maxWidth: "25vw",
+					}}>
+						<h1 style={{
+							color: "white",
+						}}>
+							Food & Agriculture
+						</h1>
+						<h3 style={{
+							color: "white",
+						}}>
+						Our goal is to reduce over 150,000 metric tons CO2 equivalent by 2030 through programs enabling composting, food waste reduction, and access to lower-carbon emitting diets.
+						</h3>
+					</div>
+					
+				</div>
+				
+			</div>: null}
 		</div>
 	);
 }
