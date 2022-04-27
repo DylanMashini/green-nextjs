@@ -15,6 +15,7 @@ export default function Hero({ ImageSrc, mobile, children }) {
 			<div
 				style={{
 					width: "100vw",
+					overflow: "visible",
 				}}
 			>
 				{children}
