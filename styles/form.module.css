@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    margin-left: 35vw;
+}
+.wrapper div {
+    overflow: hidden;
+}
+.wrapper.mobile {
+    margin-left: 0 !important;
+}
+.wrapper .item {
+    margin-bottom: 2em;
+}
+.wrapper p {
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.wrapepr.mobile p {
+    width: 80vw;
+    margin-left: 0;
+}
+.wrapper a {
+    cursor: pointer;
+}
+.wrapper a:hover {
+    text-decoration: underline;
+}
+.form {
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper.mobile .form {
+    width: 90vw !important;
+}

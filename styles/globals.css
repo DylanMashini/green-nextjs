@@ -65,6 +65,7 @@ a {
 	height: 100vh;
 	background-size: cover;
 	word-wrap: break-word;
+	overflow: hidden;
 
 }
 .hero h1 {
@@ -138,3 +139,12 @@ a {
 .Raleway {
 	font-family: 'Raleway', serif;
 }
+.join-image {
+	object-fit: none;
+	object-position: 0 4vw;
+	background-color: #273f4b;
+}
+/* .join-image.mobile {
+	object-fit: none;
+	object-position: -30em 4vw;
+} */
