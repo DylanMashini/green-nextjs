@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import sgMail from "@sendgrid/mail";
-import { MongoClient } from "mongodb";
 
 export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 	if (req.method != "POST") {
@@ -28,28 +27,24 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 	};
 	sgMail.send(msg).then(async res => {
 		console.log("sent email");
-		const client = new MongoClient(process.env.MONGO_URI);
-		try {
-			await client.connect();
-			const db = client.db("mygreenearth");
-			const collection = db.collection("emails");
-			if (!(await collection.findOne({ email: email }))) {
-				await collection.insertOne({
-					email: email,
-					firstName: firstName,
-					lastName: lastName,
-					messages: [message],
-					source: source,
-				});
-			} else {
-				//user already exists
-				await collection.updateOne(
-					{ email: email },
-					{ $push: { messages: message } }
-				);
-			}
-		} finally {
-			client.close();
+		const clientPromise = require("./mongodb-client");
+		const client = await clientPromise;
+		const db = client.db("mygreenearth");
+		const collection = db.collection("users");
+		const user = await collection.findOne({ email: email });
+		if (user) {
+			await collection.updateOne(
+				{ $push: { messages: message } },
+				source ? { $set: { source: source } } : null
+			);
+		} else {
+			await collection.insertOne({
+				email: email,
+				firstName: firstName,
+				lastName: lastName,
+				messages: [message],
+				source: source,
+			});
 		}
 	});
 	res.status(200).end();
