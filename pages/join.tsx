@@ -27,6 +27,12 @@ export default function Join() {
 			getMobile();
 		});
 	}
+	const pStyle = mobile
+		? {
+				width: "90vw",
+				marginLeft: "0",
+		  }
+		: {};
 	return (
 		<div>
 			<Navbar mobile={mobile} />
@@ -34,7 +40,7 @@ export default function Join() {
 				ImageSrc="/content/join.jpeg"
 				mobile={mobile}
 				className={`join-image${mobile ? " mobile" : ""}`}
-				height="200vh"
+				height={mobile ? "200vh" : "100vh"}
 			>
 				<Form
 					mobile={mobile}
@@ -45,12 +51,7 @@ export default function Join() {
 								maxWidth: "90vw",
 							}}
 						>
-							<p
-								style={{
-									width: "90vw",
-									marginLeft: "0",
-								}}
-							>
+							<p style={pStyle}>
 								Interested in making an impact for
 								sustainability in Cobb County? We would love to
 								have you join us! We are looking for individual
@@ -58,23 +59,13 @@ export default function Join() {
 								volunteer with us. Whatever your interests and
 								skills are, there is a place for you!
 							</p>
-							<p
-								style={{
-									width: "90vw",
-									marginLeft: "0",
-								}}
-							>
+							<p style={pStyle}>
 								We are also seeking ambassadors to help with
 								efforts in the following cities: Acworth,
 								Austell, Kennesaw, Marietta, Powder Springs and
 								Smyrna.
 							</p>
-							<p
-								style={{
-									width: "90vw",
-									marginLeft: "0",
-								}}
-							>
+							<p style={pStyle}>
 								Complete the form below or email{" "}
 								<a href="mailto:info@mygreenearth.org">
 									info@mygreenearth.org
