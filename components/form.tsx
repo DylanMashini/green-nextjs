@@ -75,6 +75,9 @@ export default function Form({
 						backgroundColor: "#ffc916ff",
 						color: "#000000",
 					}}
+					onClick={() => {
+						submitForm();
+					}}
 				>
 					Submit
 				</Button>
