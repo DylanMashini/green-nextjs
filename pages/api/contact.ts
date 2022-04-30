@@ -38,13 +38,20 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 				source ? { $set: { source: source } } : null
 			);
 		} else {
-			await collection.insertOne({
-				email: email,
-				firstName: firstName,
-				lastName: lastName,
-				messages: [message],
-				source: source,
-			});
+			await collection
+				.insertOne({
+					email: email,
+					firstName: firstName,
+					lastName: lastName,
+					messages: [message],
+					source: source,
+				})
+				.then(res => {
+					console.log(res);
+				})
+				.catch(err => {
+					console.error(err);
+				});
 		}
 	});
 	res.status(200).end();
