@@ -70,8 +70,8 @@ export default function Form({
 					}}
 					fullWidth
 					value={message}
-					onChange={() => {
-						setMessage(message);
+					onChange={e => {
+						setMessage(e.target.value);
 					}}
 				/>
 				<Button
