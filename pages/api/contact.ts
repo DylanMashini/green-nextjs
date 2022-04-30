@@ -27,7 +27,7 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 	};
 	sgMail.send(msg).then(async res => {
 		console.log("sent email");
-		const clientPromise = require("./mongodb-client");
+		const clientPromise = require("../../mongo-client");
 		const client = await clientPromise;
 		const db = client.db("mygreenearth");
 		const collection = db.collection("users");
