@@ -1103,11 +1103,6 @@ bcrypt@^5.0.1:
     "@mapbox/node-pre-gyp" "^1.0.0"
     node-addon-api "^3.1.0"
 
-blurhash@^1.1.4:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/blurhash/-/blurhash-1.1.5.tgz#3034104cd5dce5a3e5caa871ae2f0f1f2d0ab566"
-  integrity sha512-a+LO3A2DfxTaTztsmkbLYmUzUeApi0LZuKalwbNmqAHR6HhJGMt1qSV/R3wc+w4DL28holjqO3Bg74aUGavGjg==
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -1168,15 +1163,6 @@ canvas@2.6.1:
   dependencies:
     nan "^2.14.0"
     node-pre-gyp "^0.11.0"
-    simple-get "^3.0.3"
-
-canvas@^2.8.0:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/canvas/-/canvas-2.9.1.tgz#58ec841cba36cef0675bc7a74ebd1561f0b476b0"
-  integrity sha512-vSQti1uG/2gjv3x6QLOZw7TctfufaerTWbVe+NSduHxxLGB+qf3kFgQ6n66DSnuoINtVUjrLLIK2R+lxrBG07A==
-  dependencies:
-    "@mapbox/node-pre-gyp" "^1.0.0"
-    nan "^2.15.0"
     simple-get "^3.0.3"
 
 chalk@^2.0.0:
@@ -2329,7 +2315,7 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
-nan@^2.14.0, nan@^2.15.0:
+nan@^2.14.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
   integrity sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==
@@ -3169,14 +3155,6 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-use-next-blurhash@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/use-next-blurhash/-/use-next-blurhash-1.0.2.tgz#1beaf4b49b58eecbd086ab1307e5f43a7dcc3527"
-  integrity sha512-VpJjuAUOM+Xp8inR/S7iEvWNX98+KutgZ6EPuzNR594F59Kya+fdLrihdkdwz5pRV8x4xHbu9tZtGQSQZ3T/PA==
-  dependencies:
-    blurhash "^1.1.4"
-    canvas "^2.8.0"
 
 use-subscription@1.5.1:
   version "1.5.1"
