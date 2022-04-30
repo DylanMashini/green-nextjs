@@ -12,6 +12,7 @@ export default function Form({
 	const [email, setEmail] = useState("");
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
+	const [message, setMessage] = useState("");
 	const submitForm = () => {
 		fetch(`${server}/api/contact`, {
 			method: "POST",
@@ -22,6 +23,7 @@ export default function Form({
 				firstName: firstName,
 				lastName: lastName,
 				email: email,
+				message: message,
 				source: source,
 			}),
 		})
@@ -67,6 +69,10 @@ export default function Form({
 						fontFamily: "sans-serif !important",
 					}}
 					fullWidth
+					value={message}
+					onChange={() => {
+						setMessage(message);
+					}}
 				/>
 				<Button
 					css={{
