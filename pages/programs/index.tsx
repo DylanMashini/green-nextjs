@@ -66,19 +66,10 @@ export default function Programs() {
 							<h2>
 								Our Electricity, Recycling, and Food &
 								Agriculture Programs combined have the potential
-								to{"\n"}
-								<span
-									style={{
-										fontSize: "1.8em",
-									}}
-								>
-									reduce over 550,000 metric tons of CO2
-									equivalent
-								</span>
-								{"\n"}
-								by 2030. That is equal to removing 118,508
-								gasoline-powered cars from the road for an
-								entire year.​
+								to reduce over 550,000 metric tons of CO2
+								equivalent by 2030. That is equal to removing
+								118,508 gasoline-powered cars from the road for
+								an entire year.​
 							</h2>
 						) : (
 							<h2
@@ -88,18 +79,10 @@ export default function Programs() {
 							>
 								Our Electricity, Recycling, and Food &
 								Agriculture Programs combined have the potential
-								to{" "}
-								<span
-									style={{
-										fontSize: "1.3em",
-									}}
-								>
-									reduce over 550,000 metric tons of CO2
-									equivalent
-								</span>{" "}
-								by 2030. That is equal to removing 118,508
-								gasoline-powered cars from the road for an
-								entire year.​
+								to reduce over 550,000 metric tons of CO2
+								equivalent by 2030. That is equal to removing
+								118,508 gasoline-powered cars from the road for
+								an entire year.​
 							</h2>
 						)}
 					</div>
