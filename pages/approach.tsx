@@ -38,7 +38,7 @@ export default function Approach() {
 		<div>
 			<Navbar mobile={mobile} />
 			<Hero
-				ImageSrc="/content/mountian.jpg"
+				ImageSrc="/content/mountain.jpeg"
 				mobile={mobile}
 				height={divHeight}
 			>
