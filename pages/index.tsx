@@ -69,12 +69,22 @@ const Home: NextPage = () => {
 							width: "80vw",
 						}}
 					>
-						<h2>
+						<h2
+							style={{
+								fontFamily: "sans-serif",
+							}}
+						>
 							“We don't need a handful of people doing zero waste
 							perfectly. We need millions of people doing it
 							imperfectly.”
 						</h2>
-						<h2>– Anne Marie Bonneau</h2>
+						<h2
+							style={{
+								fontFamily: "sans-serif",
+							}}
+						>
+							- Anne Marie Bonneau
+						</h2>
 					</div>
 				</div>
 			</div>

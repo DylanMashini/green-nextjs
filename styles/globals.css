@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
+h1 {
+	font-family: 'Raleway', sans-serif;
+}
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+h3 {
+	font-family: 'Raleway',sans-serif;
+}
+h4 {
+	font-family: 'Raleway',sans-serif;
+}
+h5 {
+	font-family: 'Raleway', sans-serif;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+}
 html,
 body {
 	padding: 0;
@@ -28,7 +46,7 @@ a {
 }
 .nav-item {
 	color: white;
-	font-family: 'Lato';
+	font-family: 'Raleway';
 }
 .nav-item:hover {
 	text-decoration: underline;
@@ -122,7 +140,7 @@ a {
 }
 .content h2 {
 	color: white;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 .solar.mobile {
 	flex-direction: column !important;

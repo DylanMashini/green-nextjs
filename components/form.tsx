@@ -36,7 +36,13 @@ export default function Form({
 		<div
 			className={`${styles["wrapper"]} ${mobile ? styles["mobile"] : ""}`}
 		>
-			<h1>{header}</h1>
+			<h1
+				style={{
+					color: "white",
+				}}
+			>
+				{header}
+			</h1>
 			{text}
 			<div className={styles["form"]}>
 				<Input
