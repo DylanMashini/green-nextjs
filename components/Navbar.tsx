@@ -189,29 +189,31 @@ export default function Navbar({ mobile }) {
 	return (
 		<div className={"navbar"}>
 			<Grid>
-					<div
-						style={{
-							display: "flex",
-							justifyContent: "center",
-							alignItems: "center",
-							height: "100%",
-							marginLeft: "1vw",
-						}}
-					>
-						<Link href="/#">
-							<Image
-								className="nav-item"
-								src="/logo.png"
-								width="85"
-								height="62"
-							/>
-						</Link>
-					</div>
-				</Grid>
-			<Grid.Container justify="flex-end" style={{
-				marginRight: "2em",
-			}}>
-
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						alignItems: "center",
+						height: "100%",
+						marginLeft: "1vw",
+					}}
+				>
+					<Link href="/#">
+						<Image
+							className="nav-item"
+							src="/logo.png"
+							width="85"
+							height="62"
+						/>
+					</Link>
+				</div>
+			</Grid>
+			<Grid.Container
+				justify="flex-end"
+				style={{
+					marginRight: "2em",
+				}}
+			>
 				<div className={styles.dropdown}>
 					<Grid>
 						<Link href="/approach">
@@ -305,7 +307,7 @@ export default function Navbar({ mobile }) {
 
 				<div className={styles.dropdown}>
 					<Grid>
-						<Link href="/Join">
+						<Link href="/join">
 							<h3 className="nav-item">Join Us</h3>
 						</Link>
 					</Grid>
