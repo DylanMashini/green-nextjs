@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+}
+.content p {
+    font-size: 18px;
+    margin-left: 0;
+    width: 90%;
+    word-wrap: break-word;
+    overflow: visible;
+}
+.content-item {
+    width: 40vw;
+    margin-right: 2em;
+    max-height: 80vh;
+    background-color: #ffffff31;
+    padding-left: 1em;
+    overflow: hidden;
+}
+.content.mobile {
+    flex-wrap: wrap;
+    height: 250vh;
+    overflow: hidden;
+    width: 100vw;
+}
+.content.mobile .content-item {
+        width: 100vw;
+}

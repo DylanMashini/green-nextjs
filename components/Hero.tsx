@@ -19,8 +19,21 @@ export default function Hero({
 				style={{ zIndex: -1, width: "100vw" }}
 			/>
 			<div>
-				<h1>{Header}</h1>
-				<p className={mobile ? "hero-mobile-text" : ""}>{Text}</p>
+				<h1
+					style={{
+						color: "black",
+					}}
+				>
+					{Header}
+				</h1>
+				<p
+					style={{
+						color: "black",
+					}}
+					className={mobile ? "hero-mobile-text" : ""}
+				>
+					{Text}
+				</p>
 				<Button
 					css={{
 						margin: "0 auto",
