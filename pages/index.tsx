@@ -54,10 +54,7 @@ const Home: NextPage = () => {
 			<Hero
 				ImageSrc={"/header1.jpeg"}
 				Header="A Sustainable Cobb"
-				Text="Each one of us can live comfortably with habits that help
-					our planet . Join us in creating opportunities to make Cobb
-					County the most sustainable county in Georgia, all through
-					small habit changes!"
+				Text="Enabling sustainable living choices for local communities in and around Cobb County, GA​"
 				ButtonText="Learn More"
 				ButtonLink="/programs"
 				mobile={mobile}
@@ -89,19 +86,28 @@ const Home: NextPage = () => {
 				</div>
 			</div>
 			<ThreeDisplay
-				headers={["We are on a mission", "Our Programs", "Our Impact"]}
+				headers={[
+					"A Sustainable Cobb",
+					"Collective Action",
+					"Community Partnerships",
+				]}
 				text={[
-					"to provide sustainable living choices to residents of Cobb County, Georgia.",
-					"to provide sustainable living choices to residents of Cobb County, Georgia.",
-					"Using the framework developed by Drawdown Georgia, we show how each person in Cobb can make an impact.",
+					"We are on a mission to make Cobb County the most sustainable county in Georgia.  As the 3rd largest county, we have the potential to make a significant impact.  We need your help!",
+					"Our Electricity, Recycling, and Food & Agriculture Programs combined have the potential to reduce over 550,000 metric tons of CO2 equivalent by 2030, all from the small sustainable actions from individual community members like you.",
+					"There are four strategies to achieving our mission: partnerships, events,  community engagement, and awareness.  Through these we hope to inspire sustainable choices throughout our community.  Partner with us and together we can make an impact!",
 				]}
 				images={[
+					"/content/TextileRecycling.jpeg",
 					"/content/picture1.jpeg",
-					"/content/solar1.jpeg",
-					"/content/river.jpeg",
+					"/content/TeamVolunteering.jpeg",
 				]}
 				buttonLinks={["/#", "/solarize", "/#"]}
 				mobile={mobile}
+				buttonText={[
+					"Learn how you can help",
+					"Learn about our programs",
+					"Partner with us",
+				]}
 			/>
 		</div>
 	);

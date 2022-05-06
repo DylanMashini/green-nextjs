@@ -8,6 +8,7 @@ export default function ThreeDisplay({
 	images,
 	buttonLinks,
 	mobile,
+	buttonText = ["Learn More", "Learn More", "Learn More"],
 }) {
 	const router = useRouter();
 	return (
@@ -46,7 +47,7 @@ export default function ThreeDisplay({
 								router.push(buttonLinks[0]);
 							}}
 						>
-							Learn More
+							{buttonText[0]}
 						</Button>
 					</div>
 				</div>
@@ -79,7 +80,7 @@ export default function ThreeDisplay({
 								router.push(buttonLinks[1]);
 							}}
 						>
-							Learn More
+							{buttonText[1]}
 						</Button>
 					</div>
 				</div>
@@ -112,7 +113,7 @@ export default function ThreeDisplay({
 								router.push(buttonLinks[2]);
 							}}
 						>
-							Learn More
+							{buttonText[2]}
 						</Button>
 					</div>
 				</div>
