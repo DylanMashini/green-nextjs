@@ -65,7 +65,8 @@ a {
 
 .hero {
 	/* margin-top: 7vh; */
-	position: absolute;
+	position: relative;
+	z-index: 998;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -73,7 +74,6 @@ a {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	z-index: -1;
 	text-align: left;
 	height: 100vh;
 	background-size: cover;
