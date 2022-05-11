@@ -31,6 +31,7 @@ export default function Hero({
 					overflow: "visible",
 					marginTop: height == "100vh" ? "" : "20vh",
 					height: height == "100vh" ? "" : height,
+					zIndex: "998",
 				}}
 			>
 				{children}

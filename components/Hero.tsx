@@ -18,7 +18,11 @@ export default function Hero({
 				objectFit="cover"
 				style={{ zIndex: -1, width: "100vw" }}
 			/>
-			<div>
+			<div
+				style={{
+					zIndex: "998",
+				}}
+			>
 				<h1
 					style={{
 						color: "black",

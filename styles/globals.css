@@ -1,23 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
-h1 {
+/* variable decleration */
+:root {
+	--footer-height: 20vh;
+}
+h1, h2, h3, h4, h5, h6, p, a {
 	font-family: 'Raleway', sans-serif;
 }
-h2 {
-	font-family: 'Raleway', sans-serif;
-}
-h3 {
-	font-family: 'Raleway',sans-serif;
-}
-h4 {
-	font-family: 'Raleway',sans-serif;
-}
-h5 {
-	font-family: 'Raleway', sans-serif;
-}
-p {
-	font-family: 'Raleway', sans-serif;
-}
+
 html,
 body {
 	padding: 0;
@@ -26,6 +16,11 @@ body {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	min-height: 100vh;
+	margin: 0;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 div {
 	overflow-x: hidden;
@@ -157,8 +152,30 @@ a {
 	object-fit: none;
 	object-position: 0 4vw;
 	background-color: #273f4b;
+	
 }
 /* .join-image.mobile {
 	object-fit: none;
 	object-position: -30em 4vw;
 } */
+
+
+.footer {
+	position:absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #f5f5f5;
+	height: var(--footer-height);
+}
+
+.wrapper {
+	padding-bottom: var(--footer-height);
+}
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
+.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}

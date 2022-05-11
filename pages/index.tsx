@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 import { useState, useEffect } from "react";
 import ThreeDisplay from "../components/ThreeDisplay";
 import Hero from "../components/Hero";
@@ -46,11 +46,11 @@ const Home: NextPage = () => {
 		});
 	});
 	return (
-		<div>
+		<Layout mobile={mobile}>
 			<Head>
 				<title>Home</title>
 			</Head>
-			<Navbar mobile={mobile} />
+
 			<Hero
 				ImageSrc={"/header1.jpeg"}
 				Header="A Sustainable Cobb"
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
 					"Partner with us",
 				]}
 			/>
-		</div>
+		</Layout>
 	);
 };
 
