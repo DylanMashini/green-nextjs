@@ -39,3 +39,6 @@
 .wrapper.mobile .form {
     width: 90vw !important;
 }
+.wrapper textarea {
+    font-family: var(--nextui-fonts-sans);
+}

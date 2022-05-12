@@ -72,7 +72,7 @@ export default function Form({
 				<Textarea
 					placeholder="Specific Interests"
 					css={{
-						fontFamily: "sans-serif !important",
+						fontFamily: "var(--nextui-fonts-sans)",
 					}}
 					fullWidth
 					value={message}

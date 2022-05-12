@@ -71,7 +71,7 @@ export default function Navbar({ mobile }) {
 							<a>{"	"}Test</a>
 						</Link>
 					) : null}
-					<Link href="/#about">
+					<Link href="/join">
 						<a>
 							Button 3<i className="bx bx-chevron-down"></i>
 						</a>
@@ -290,7 +290,7 @@ export default function Navbar({ mobile }) {
 				</div>
 				<div className={styles.dropdown}>
 					<Grid>
-						<Link href="/#about">
+						<Link href="/join">
 							<h3 className="nav-item">Partner</h3>
 						</Link>
 					</Grid>

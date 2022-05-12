@@ -121,7 +121,8 @@ a {
 	position: absolute;
 	background-color: #195b92d1;
 	text-align: left;
-	margin-top: 80vh;
+	margin-top: -20vh;
+	z-index: 998;
 	height: 20vh;
 	width: 100vw;
 	padding-left: 4vw;
