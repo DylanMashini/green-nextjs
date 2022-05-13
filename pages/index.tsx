@@ -53,7 +53,7 @@ const Home: NextPage = () => {
 
 			<Hero
 				ImageSrc={"/header1.jpeg"}
-				Header="A Sustainable Cobb"
+				Header=""
 				Text="Enabling sustainable living choices for local communities in and around Cobb County, GA​"
 				ButtonText="Learn More"
 				ButtonLink="/programs"
