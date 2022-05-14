@@ -1,5 +1,5 @@
 import Hero from "../components/RightTextHero";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 import Form from "../components/form";
 import { useState, useEffect } from "react";
 
@@ -34,8 +34,7 @@ export default function Join() {
 		  }
 		: {};
 	return (
-		<div>
-			<Navbar mobile={mobile} />
+		<Layout mobile={mobile}>
 			<Hero
 				ImageSrc="/content/join.jpeg"
 				mobile={mobile}
@@ -76,6 +75,6 @@ export default function Join() {
 					}
 				/>
 			</Hero>
-		</div>
+		</Layout>
 	);
 }

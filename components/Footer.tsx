@@ -1,17 +1,89 @@
 import styles from "../styles/footer.module.css";
 import Image from "next/image";
-
-export default function Footer() {
+import mobileStyles from "../styles/footer.mobile.module.css";
+export default function Footer({ mobile }) {
+	if (mobile) {
+		return (
+			<div className={`footer${mobile ? " mobile" : ""}`}>
+				<div className={mobileStyles["content"]}>
+					<div className={styles["line"]} />
+					<div className={mobileStyles["flex"]}>
+						<div className={mobileStyles["column"]}>
+							<div
+								style={{
+									marginLeft: "2.5rem",
+								}}
+							>
+								{/* <Image
+									src="/logo2.png"
+									width="38"
+									height={"31"}
+								/> */}
+								<p>
+									Copyright &copy; 2022 My Green Earth, Inc.
+									All Rights Reserved
+								</p>
+							</div>
+						</div>
+						<div className={mobileStyles["column"]}>
+							<a
+								href="https://www.dylanmashini.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Website Made By Dylan Mashini
+							</a>
+						</div>
+						<div className={mobileStyles["column"]}>
+							<p>My Green Earth, Inc. is a registered 501(c)3</p>
+						</div>
+						<div className={mobileStyles["column"]}>
+							<a
+								href="https://www.facebook.com/MyGreenEarthInc/"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{
+									marginRight: "1rem",
+								}}
+							>
+								<Image
+									src="/facebook.png"
+									width="30"
+									height="30"
+								/>
+							</a>
+							<a
+								href="https://www.linkedin.com/company/mygreenearth"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Image
+									src="/linkedin.png"
+									width="36"
+									height="30"
+								/>
+							</a>
+						</div>
+						<div className={styles["column"]}>
+							<a>Terms of Use</a>
+							<p> </p>
+							<a>Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
 	return (
-		<div className="footer">
-			<div className={styles["content"]}>
+		<div className={`footer`}>
+			<div className={`${styles["content"]}`}>
 				<div className={styles["line"]} />
 				<div className={styles["flex"]}>
 					<div className={styles["half"]}>
 						<div className={styles["row"]}>
 							<div
 								style={{
-									marginLeft: "2.5rem",
+									marginLeft: "0rem",
 								}}
 							>
 								<Image
@@ -21,7 +93,7 @@ export default function Footer() {
 								/>
 							</div>
 							<p>
-								Copyright &Copy 2022 My Green Earth, Inc. All
+								Copyright &copy; 2022 My Green Earth, Inc. All
 								Rights Reserved
 							</p>
 						</div>
@@ -51,7 +123,7 @@ export default function Footer() {
 							>
 								<Image
 									src="/facebook.png"
-									width="212"
+									width="40"
 									height="40"
 								/>
 							</a>

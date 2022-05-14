@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import styles from "../../styles/programs.module.css";
+import Layout from "../../components/Layout";
 
 export default function Programs() {
 	const router = useRouter();
@@ -31,8 +32,7 @@ export default function Programs() {
 		});
 	}
 	return (
-		<div>
-			<Navbar mobile={mobile} />
+		<Layout mobile={mobile}>
 			<Hero ImageSrc="/content/dropsOnLeaf.jpeg" mobile={mobile}>
 				<div
 					className={`${styles["hero-text"]} Raleway ${
@@ -174,7 +174,6 @@ export default function Programs() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</Layout>
 	);
 }
-

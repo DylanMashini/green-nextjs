@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
 /* variable decleration */
 :root {
 	--footer-height: 20vh;
+	--mobile-footer-height: 45vh;
 }
+
 /* global font */
 h1, h2, h3, h4, h5, h6, p, a {
 	font-family: 'Raleway', sans-serif;
@@ -97,6 +100,12 @@ a {
 	white-space: pre-wrap;
 	width: 90vw !important;
 }
+.hero-mobile-text-h2 {
+	font-size: 1.5rem !important;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	width: 90vw !important;
+}
 .hero button {
 	margin-left: 8vw;
 	
@@ -128,6 +137,9 @@ a {
 	width: 100vw;
 	padding-left: 4vw;
 	overflow: hidden;
+}
+.content h2 {
+	font-family: 'News Cycle', sans-serif;
 }
 .content.solar.mobile {
 	background-color: #195c92 !important;
@@ -163,11 +175,15 @@ a {
 
 
 .footer {
-	position:absolute;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 	background-color: #f5f5f5;
 	height: var(--footer-height);
+}
+
+.footer.mobile {
+	height: var(--mobile-footer-height) !important;
 }
 
 .wrapper {
@@ -180,4 +196,7 @@ a {
 .link:hover {
 	text-decoration: underline;
 	cursor: pointer;
+}
+.wrapper.mobile {
+	padding-bottom: var(--mobile-footer-height);
 }

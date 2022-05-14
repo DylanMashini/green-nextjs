@@ -8,6 +8,7 @@ export default function Hero({
 	ButtonText,
 	ButtonLink,
 	mobile,
+	h2 = false,
 }) {
 	const router = useRouter();
 	return (
@@ -30,14 +31,28 @@ export default function Hero({
 				>
 					{Header}
 				</h1>
-				<p
-					style={{
-						color: "black",
-					}}
-					className={mobile ? "hero-mobile-text" : ""}
-				>
-					{Text}
-				</p>
+				{!h2 ? (
+					<p
+						style={{
+							color: "black",
+						}}
+						className={mobile ? "hero-mobile-text" : ""}
+					>
+						{Text}
+					</p>
+				) : (
+					<h2
+						style={{
+							fontSize: "2em",
+							maxWidth: "40vw",
+							marginLeft: "8vw",
+						}}
+						className={mobile ? "hero-mobile-text-h2" : ""}
+					>
+						{Text}
+					</h2>
+				)}
+
 				<Button
 					css={{
 						margin: "0 auto",

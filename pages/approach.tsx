@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Hero from "../components/RightTextHero";
@@ -35,8 +35,7 @@ export default function Approach() {
 	}
 
 	return (
-		<div>
-			<Navbar mobile={mobile} />
+		<Layout mobile={mobile}>
 			<Hero
 				ImageSrc="/content/mountain.jpeg"
 				mobile={mobile}
@@ -169,6 +168,6 @@ export default function Approach() {
 					</Button> */}
 				</div>
 			</Hero>
-		</div>
+		</Layout>
 	);
 }

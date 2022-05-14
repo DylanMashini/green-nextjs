@@ -39,6 +39,9 @@ export default function Form({
 			<h1
 				style={{
 					color: "white",
+					textAlign: "left",
+					width: "100%",
+					marginLeft: "20vw",
 				}}
 			>
 				{header}

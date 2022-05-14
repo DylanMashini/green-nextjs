@@ -58,6 +58,7 @@ const Home: NextPage = () => {
 				ButtonText="Learn More"
 				ButtonLink="/programs"
 				mobile={mobile}
+				h2
 			/>
 			<div className={`content${mobile ? " mobile" : ""}`}>
 				<div>
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
 					>
 						<h2
 							style={{
-								fontFamily: "sans-serif",
+								fontFamily: "News Cycle, sans-serif",
 							}}
 						>
 							“We don't need a handful of people doing zero waste
@@ -77,7 +78,7 @@ const Home: NextPage = () => {
 						</h2>
 						<h2
 							style={{
-								fontFamily: "sans-serif",
+								fontFamily: "News Cycle, sans-serif",
 							}}
 						>
 							- Anne Marie Bonneau
