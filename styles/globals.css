@@ -11,7 +11,7 @@
 h1, h2, h3, h4, h5, h6, p, a, li {
 	font-family: 'Raleway', sans-serif;
 	/* text drop shaddow */
-	text-shadow: 1px 1px 1px rgb(111, 111, 111);
+	text-shadow: 0.5px 0.5px 0.5px rgb(111, 111, 111);
 }
 
 html,
