@@ -17,7 +17,7 @@ export default function Approach() {
 		setHeight(window.innerHeight);
 		if (window.innerWidth < 905) {
 			setMobile(true);
-			setDivHeight("250vh");
+			setDivHeight("350vh");
 		} else {
 			setMobile(false);
 			setDivHeight("130vh");
@@ -44,7 +44,7 @@ export default function Approach() {
 				<div
 					style={{
 						display: "flex",
-						marginLeft: "10%",
+						marginLeft: "0",
 						flexDirection: "column",
 						height: divHeight,
 						top: "10%",
@@ -53,13 +53,9 @@ export default function Approach() {
 					className="Raleway"
 				>
 					<h2
-						style={{
-							maxWidth: "50vw",
-							marginBottom: "2rem",
-							marginLeft: "20vw",
-							fontSize: "2em",
-							color: "#fff",
-						}}
+						className={`${styles["title"]} ${
+							mobile ? styles["mobile"] : ""
+						}`}
 					>
 						In order to achieve our mission, we have defined{" "}
 						<span
@@ -77,6 +73,7 @@ export default function Approach() {
 							color: "black",
 							width: mobile ? "60vw" : "20vw",
 							marginLeft: "20vw !important",
+							marginBottom: "10vh",
 						}}
 					>
 						Learn About How You Can Help
@@ -87,15 +84,16 @@ export default function Approach() {
 						}`}
 					>
 						<div>
-							<p
-								style={{
-									marginLeft: "1em",
-									fontSize: "16px",
-								}}
-							>
-								Our 5 pillars for a sustainable community are:
-							</p>
 							<div className={styles["content-item"]}>
+								<p
+									style={{
+										fontSize: "16px",
+										marginTop: "1em",
+									}}
+								>
+									Our 5 pillars for a sustainable community
+									are:
+								</p>
 								<h2>EMPOWERED PEOPLE</h2>
 								<p>
 									People feel empowered and energized in
@@ -127,15 +125,15 @@ export default function Approach() {
 							</div>
 						</div>
 						<div>
-							<p
-								style={{
-									marginLeft: "1em",
-									fontSize: "16px",
-								}}
-							>
-								Here's how we will accomplish our mission:
-							</p>
 							<div className={styles["content-item"]}>
+								<p
+									style={{
+										marginTop: "1em",
+										fontSize: "16px",
+									}}
+								>
+									Here's how we will accomplish our mission:
+								</p>
 								<h2>PARTNERSHIPS</h2>
 								<p>
 									Partner with local mission-aligned companies
