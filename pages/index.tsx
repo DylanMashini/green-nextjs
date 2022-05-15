@@ -102,7 +102,7 @@ const Home: NextPage = () => {
 					"/content/picture1.jpeg",
 					"/content/TeamVolunteering.jpeg",
 				]}
-				buttonLinks={["/#", "/solarize", "/#"]}
+				buttonLinks={["/join", "/programs", "/partner"]}
 				mobile={mobile}
 				buttonText={[
 					"Learn how you can help",
