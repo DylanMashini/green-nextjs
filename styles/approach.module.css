@@ -9,14 +9,20 @@
     width: 90%;
     word-wrap: break-word;
     overflow: visible;
+    color: "white";
 }
 .content-item {
     width: 40vw;
     margin-right: 2em;
     max-height: 80vh;
-    background-color: #ffffff31;
+    background-color: #00000060;
     padding-left: 1em;
     overflow: hidden;
+    border-radius: 10px;
+}
+.content-item h1, .content-item h2, .content-item h3, .content-item h4, .content-item p, .content-item a {
+    color: #ffffff;
+
 }
 .content.mobile {
     flex-wrap: wrap;

@@ -37,7 +37,7 @@ export default function Approach() {
 	return (
 		<Layout mobile={mobile}>
 			<Hero
-				ImageSrc="/content/mountain.jpeg"
+				ImageSrc="/content/roots.jpeg"
 				mobile={mobile}
 				height={divHeight}
 			>
@@ -54,10 +54,11 @@ export default function Approach() {
 				>
 					<h2
 						style={{
-							maxWidth: "40vw",
+							maxWidth: "50vw",
 							marginBottom: "2rem",
 							marginLeft: "20vw",
 							fontSize: "2em",
+							color: "#fff",
 						}}
 					>
 						In order to achieve our mission, we have defined{" "}
@@ -70,6 +71,16 @@ export default function Approach() {
 						</span>{" "}
 						and 4 Strategies to make it happen.
 					</h2>
+					<Button
+						css={{
+							backgroundColor: "#ffc916ff",
+							color: "black",
+							width: mobile ? "60vw" : "20vw",
+							marginLeft: "20vw !important",
+						}}
+					>
+						Learn About How You Can Help
+					</Button>
 					<div
 						className={`${styles["content"]} ${
 							mobile ? styles["mobile"] : ""

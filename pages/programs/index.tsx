@@ -32,7 +32,7 @@ export default function Programs() {
 		});
 	}
 	return (
-		<Layout mobile={mobile}>
+		<Layout mobile={mobile} prefetch={["/join/"]}>
 			<Hero ImageSrc="/content/dropsOnLeaf.jpeg" mobile={mobile}>
 				<div
 					className={`${styles["hero-text"]} Raleway ${
@@ -94,7 +94,7 @@ export default function Programs() {
 							backgroundColor: "#ffc916ff",
 						}}
 						onClick={() => {
-							router.push("/programs/#");
+							router.push("/join/");
 						}}
 					>
 						Help us Meet This Goal
