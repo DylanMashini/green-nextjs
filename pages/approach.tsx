@@ -35,7 +35,7 @@ export default function Approach() {
 	}
 
 	return (
-		<Layout mobile={mobile}>
+		<Layout mobile={mobile} prefetch={["/join"]}>
 			<Hero
 				ImageSrc="/content/roots.jpeg"
 				mobile={mobile}
@@ -74,6 +74,9 @@ export default function Approach() {
 							width: mobile ? "60vw" : "20vw",
 							marginLeft: "20vw !important",
 							marginBottom: "10vh",
+						}}
+						onClick={() => {
+							router.push("/join");
 						}}
 					>
 						Learn About How You Can Help
