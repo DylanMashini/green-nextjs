@@ -202,8 +202,8 @@ export default function Navbar({ mobile }) {
 						<Image
 							className="nav-item"
 							src="/logo.png"
-							width="85"
-							height="62"
+							width="276"
+							height="80"
 						/>
 					</Link>
 				</div>
