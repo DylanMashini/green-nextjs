@@ -53,11 +53,11 @@ export default function Navbar({ mobile }) {
 		const Menu = ({ open }) => {
 			return (
 				<StyledMenu open={open}>
-					<Link href="/">
+					<Link href="/#">
 						<a>Home</a>
 					</Link>
 
-					<a
+					{/* <a
 						onClick={() => {
 							console.log("pressed");
 							setOpen2(!open2);
@@ -70,16 +70,21 @@ export default function Navbar({ mobile }) {
 						<Link href="/">
 							<a>{"	"}Test</a>
 						</Link>
-					) : null}
-					<Link href="/join">
-						<a>
-							Button 3<i className="bx bx-chevron-down"></i>
-						</a>
+					) : null} */}
+					<Link href="/approach">
+						<a>Our Approach</a>
 					</Link>
-					<Link href="/#contact">
-						<a>
-							Button 4<i className="bx bx-chevron-down"></i>
-						</a>
+					<Link href="/programs">
+						<a>Programs</a>
+					</Link>
+					<Link href="/about">
+						<a>About Us</a>
+					</Link>
+					<Link href="/partner">
+						<a>Partner</a>
+					</Link>
+					<Link href="/join">
+						<a>Join Us</a>
 					</Link>
 				</StyledMenu>
 			);
@@ -290,7 +295,7 @@ export default function Navbar({ mobile }) {
 				</div>
 				<div className={styles.dropdown}>
 					<Grid>
-						<Link href="/join">
+						<Link href="/partner">
 							<h3 className="nav-item">Partner</h3>
 						</Link>
 					</Grid>
