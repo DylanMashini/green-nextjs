@@ -35,6 +35,7 @@ export default function Hero({
 					<p
 						style={{
 							color: "black",
+							wordBreak: "break-word",
 						}}
 						className={mobile ? "hero-mobile-text" : ""}
 					>
