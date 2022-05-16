@@ -101,6 +101,7 @@ a {
 	word-wrap: break-word;
 	white-space: pre-wrap;
 	width: 90vw !important;
+	min-width: 80vw !important;
 }
 .hero-mobile-text-h2 {
 	font-size: 1.5rem !important;
