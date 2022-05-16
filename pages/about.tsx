@@ -56,11 +56,11 @@ export default function About() {
 				style={{
 					display: "flex",
 					flexDirection: "row",
+					height: mobile ? "100vh" : "50vh",
 				}}
 			>
 				<div
 					style={{
-						height: "50vh",
 						marginLeft: "1.5em",
 						width: "50vw",
 					}}
@@ -100,7 +100,7 @@ export default function About() {
 							display: "flex",
 							flexDirection: "column",
 							width: "150px",
-							height: "100%",
+							height: mobile ? "50%" : "100%",
 							marginRight: "1em",
 							justifyContent: "center",
 						}}
@@ -133,7 +133,7 @@ export default function About() {
 							display: "flex",
 							flexDirection: "column",
 							width: "150px",
-							height: "100%",
+							height: mobile ? "50%" : "100%",
 							marginRight: "1em",
 							justifyContent: "center",
 						}}
