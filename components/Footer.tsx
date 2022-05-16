@@ -65,9 +65,21 @@ export default function Footer({ mobile }) {
 							</a>
 						</div>
 						<div className={styles["column"]}>
-							<a>Terms of Use</a>
+							<a
+								href="/terms-of-use"
+								target="_blank"
+								rel="noopener noreferer"
+							>
+								Terms of Use
+							</a>
 							<p> </p>
-							<a>Privacy Policy</a>
+							<a
+								href="/privacy-policy"
+								target={"_blank"}
+								rel="noopener noreferer"
+							>
+								Privacy Policy
+							</a>
 						</div>
 					</div>
 				</div>
