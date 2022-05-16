@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.mygreenearth.org/
+
+# Sitemaps
+Sitemap: https://www.mygreenearth.org/sitemap.xml
