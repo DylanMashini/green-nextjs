@@ -38,7 +38,7 @@ export default function ThreeDisplay({
 						}`}
 					>
 						<h3>{headers[0]}</h3>
-						<h4>{text[0]}</h4>
+						<p>{text[0]}</p>
 						<Button
 							css={{
 								backgroundColor: "#1A5B92",
@@ -71,7 +71,7 @@ export default function ThreeDisplay({
 						}`}
 					>
 						<h3>{headers[1]}</h3>
-						<h4>{text[1]}</h4>
+						<p>{text[1]}</p>
 						<Button
 							css={{
 								backgroundColor: "#1A5B92",
@@ -104,7 +104,7 @@ export default function ThreeDisplay({
 						}`}
 					>
 						<h3>{headers[2]}</h3>
-						<h4>{text[2]}</h4>
+						<p>{text[2]}</p>
 						<Button
 							css={{
 								backgroundColor: "#1A5B92",
