@@ -8,6 +8,7 @@ export default function Form({
 	header = "Contact Us!",
 	text = null,
 	mobile,
+	textColor = "white",
 }) {
 	const [buttonText, setButtonText] = useState("Submit");
 	const [buttonColor, setButtonColor] = useState("#ffc916ff");
@@ -43,7 +44,7 @@ export default function Form({
 			<div>
 				<h1
 					style={{
-						color: "white",
+						color: textColor,
 						textAlign: "left",
 						maxWidth: "90vw",
 					}}
@@ -53,6 +54,7 @@ export default function Form({
 			</div>
 
 			{text}
+
 			<div className={styles["form"]}>
 				<Input
 					className={styles["item"]}

@@ -31,8 +31,11 @@ export default function Join() {
 		? {
 				width: "90vw",
 				marginLeft: "0",
+				color: "black",
 		  }
-		: {};
+		: {
+				color: "black",
+		  };
 	return (
 		<Layout mobile={mobile}>
 			<Hero
@@ -42,6 +45,7 @@ export default function Join() {
 				height={mobile ? "200vh" : "100vh"}
 			>
 				<Form
+					textColor="black"
 					mobile={mobile}
 					header="Partner With Us"
 					text={
@@ -51,7 +55,10 @@ export default function Join() {
 							}}
 						>
 							<p style={pStyle}>
-								If you are a company or post-secondary institution looking for ways to make an impact in our community and for the planet, complete the form below or email{" "}
+								If you are a company or post-secondary
+								institution looking for ways to make an impact
+								in our community and for the planet, complete
+								the form below or email{" "}
 								<a href="mailto:info@mygreenearth.org">
 									info@mygreenearth.org
 								</a>{" "}
