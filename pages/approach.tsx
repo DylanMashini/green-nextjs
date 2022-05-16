@@ -120,10 +120,9 @@ export default function Approach() {
 									Actions that harm the planet are frowned
 									upon, inconvenient, unavailable, or costly.
 								</p>
-								<h2>ENVIRONMENTAL JUSTICE</h2>
+								<h2>ENVIRONMENTAL EQUITY</h2>
 								<p>
-									Meaningful involvement and fair treatment is
-									provided to everyone in our communities.
+									Sustainable solutions are accessible to everyone in our community.
 								</p>
 							</div>
 						</div>
