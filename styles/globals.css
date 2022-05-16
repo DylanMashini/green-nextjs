@@ -108,6 +108,7 @@ a {
 	word-wrap: break-word;
 	white-space: pre-wrap;
 	width: 90vw !important;
+	min-width: 80vw;
 }
 .hero button {
 	margin-left: 8vw;
