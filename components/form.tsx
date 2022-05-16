@@ -9,6 +9,8 @@ export default function Form({
 	text = null,
 	mobile,
 }) {
+	const [buttonText, setButtonText] = useState("Submit");
+	const [buttonColor, setButtonColor] = useState("#ffc916ff");
 	const [email, setEmail] = useState("");
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
@@ -26,11 +28,13 @@ export default function Form({
 				message: message,
 				source: source,
 			}),
-		})
-			.then(res => res.json())
-			.then(res => {
-				console.log(res);
-			});
+		});
+	};
+	const updateColors = async () => {
+		setTimeout(() => {
+			setButtonText("Submit");
+			setButtonColor("#ffc916ff");
+		}, 3000);
 	};
 	return (
 		<div
@@ -87,14 +91,21 @@ export default function Form({
 					css={{
 						marginLeft: "0 !important",
 						marginTop: "1em",
-						backgroundColor: "#ffc916ff",
+						backgroundColor: buttonColor,
 						color: "#000000",
 					}}
 					onClick={() => {
 						submitForm();
+						setButtonText("Sent");
+						setButtonColor("#17C964");
+						setEmail("");
+						setFirstName("");
+						setLastName("");
+						setMessage("");
+						updateColors();
 					}}
 				>
-					Submit
+					{buttonText}
 				</Button>
 			</div>
 		</div>
