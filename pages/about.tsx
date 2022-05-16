@@ -62,7 +62,8 @@ export default function About() {
 				<div
 					style={{
 						marginLeft: "1.5em",
-						width: "50vw",
+						width: "45vw",
+						maxWidth: "50vw",
 					}}
 				>
 					<h3>

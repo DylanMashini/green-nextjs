@@ -69,7 +69,7 @@ export default function Programs() {
 								to reduce over 550,000 metric tons of CO2
 								equivalent by 2030. That is equal to removing
 								118,508 gasoline-powered cars from the road for
-								an entire year.​
+								an entire year.
 							</h2>
 						) : (
 							<h2
@@ -82,7 +82,7 @@ export default function Programs() {
 								to reduce over 550,000 metric tons of CO2
 								equivalent by 2030. That is equal to removing
 								118,508 gasoline-powered cars from the road for
-								an entire year.​
+								an entire year.
 							</h2>
 						)}
 					</div>
