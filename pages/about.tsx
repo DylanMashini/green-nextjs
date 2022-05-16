@@ -45,7 +45,7 @@ export default function About() {
 							maxWidth: "40vw",
 							marginLeft: "3vw",
 							fontSize: !mobile ? "2.0rem" : "1.5rem",
-							marginBottom: mobile ? "1.5em" : "",
+							marginBottom: mobile ? "6.5em" : "",
 						}}
 					>
 						We are on a mission to make Cobb County the #1 Most
