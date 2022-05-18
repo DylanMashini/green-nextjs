@@ -1,7 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import sgMail from "@sendgrid/mail";
 import { MongoClient } from "mongodb";
-export default function Contact(req: NextApiRequest, res: NextApiResponse) {
+export default async function Contact(
+	req: NextApiRequest,
+	res: NextApiResponse
+) {
 	if (req.method != "POST") {
 		res.status(405).send("Method not allowed");
 		return;
@@ -25,38 +28,44 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
             <h2>Sent from ${email}</h2>
         `,
 	};
-	sgMail.send(msg).then(async res => {
-		console.log("sent email");
-		const client = new MongoClient(process.env.MONGO_URI);
-		try {
-			await client.connect();
-			const db = client.db("mygreenearth");
-			const collection = db.collection("users");
-			const user = await collection.findOne({ email: email });
-			if (user) {
+	await sgMail.send(msg);
+	console.log("sent email");
+	const client = new MongoClient(process.env.MONGO_URI);
+	try {
+		await client.connect();
+		console.log("here");
+		const db = client.db("mygreenearth");
+		const collection = db.collection("users");
+		const user = await collection.findOne({ email: email });
+		if (user) {
+			await collection.updateOne(
+				{ email: email },
+				{ $push: { messages: message } }
+			);
+			if (source) {
 				await collection.updateOne(
-					{ $push: { messages: message } },
-					source ? { $set: { source: source } } : null
+					{ email: email },
+					{ $set: { source: source } }
 				);
-			} else {
-				await collection
-					.insertOne({
-						email: email,
-						firstName: firstName,
-						lastName: lastName,
-						messages: [message],
-						source: source,
-					})
-					.then(res => {
-						console.log(res);
-					})
-					.catch(err => {
-						console.error(err);
-					});
 			}
-		} finally {
-			client.close();
+		} else {
+			await collection
+				.insertOne({
+					email: email,
+					firstName: firstName,
+					lastName: lastName,
+					messages: [message],
+					source: source,
+				})
+				.then(res => {
+					console.log(res);
+				})
+				.catch(err => {
+					console.error(err);
+				});
 		}
-	});
+	} finally {
+		client.close();
+	}
 	res.status(200).end();
 }
