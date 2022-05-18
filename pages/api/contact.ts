@@ -13,7 +13,7 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 	}
 	sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 	const msg = {
-		to: "bmashini@gmail.com",
+		to: "info@mygreenearth.org",
 		from: "contact@mygreenearth.org",
 		subject: `New message from ${firstName + " " + lastName}`,
 		text: `${message}`,
