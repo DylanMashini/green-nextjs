@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import sgMail from "@sendgrid/mail";
-
+import { MongoClient } from "mongodb";
 export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 	if (req.method != "POST") {
 		res.status(405).send("Method not allowed");
@@ -27,31 +27,35 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 	};
 	sgMail.send(msg).then(async res => {
 		console.log("sent email");
-		const clientPromise = require("../../mongo-client");
-		const client = await clientPromise;
-		const db = client.db("mygreenearth");
-		const collection = db.collection("users");
-		const user = await collection.findOne({ email: email });
-		if (user) {
-			await collection.updateOne(
-				{ $push: { messages: message } },
-				source ? { $set: { source: source } } : null
-			);
-		} else {
-			await collection
-				.insertOne({
-					email: email,
-					firstName: firstName,
-					lastName: lastName,
-					messages: [message],
-					source: source,
-				})
-				.then(res => {
-					console.log(res);
-				})
-				.catch(err => {
-					console.error(err);
-				});
+		const client = new MongoClient(process.env.MONGO_URI);
+		try {
+			await client.connect();
+			const db = client.db("mygreenearth");
+			const collection = db.collection("users");
+			const user = await collection.findOne({ email: email });
+			if (user) {
+				await collection.updateOne(
+					{ $push: { messages: message } },
+					source ? { $set: { source: source } } : null
+				);
+			} else {
+				await collection
+					.insertOne({
+						email: email,
+						firstName: firstName,
+						lastName: lastName,
+						messages: [message],
+						source: source,
+					})
+					.then(res => {
+						console.log(res);
+					})
+					.catch(err => {
+						console.error(err);
+					});
+			}
+		} finally {
+			client.close();
 		}
 	});
 	res.status(200).end();
