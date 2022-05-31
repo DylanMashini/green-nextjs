@@ -114,7 +114,7 @@ export default function Programs() {
                 color: "white",
               }}
             >
-              EMPOWERED PEOPLE
+              Empowered People
             </h1>
             <p
               style={{
@@ -132,7 +132,7 @@ export default function Programs() {
               Sustainable living choices are possible through the availability
               of infrastructure and services.
             </p>
-            <h1 style={{ color: "white" }}>ENVIRONMENTAL VALUES</h1>
+            <h1 style={{ color: "white" }}>Environmental Values</h1>
             <p
               style={{
                 color: "white",
@@ -141,13 +141,13 @@ export default function Programs() {
               Environmental impact is prioritized in decision-making by
               companies, governments and individuals.
             </p>
-            <h1 style={{ color: "white" }}>ETHOS OF SUSTAINABILITY</h1>
+            <h1 style={{ color: "white" }}>Ethos of Sustainability</h1>
             <p style={{ color: "white" }}>
               Sustainable habits are the societal norm. Actions that harm the
               planet are frowned upon, inconvenient, unavailable, or costly.
             </p>
             <p style={{ color: "white" }}>
-              <h1 style={{ color: "white" }}>ENVIRONMENTAL EQUITY</h1>
+              <h1 style={{ color: "white" }}>Environmental Equity</h1>
               Sustainable solutions are accessible to everyone in our community.
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function Programs() {
                 color: "white",
               }}
             >
-              PARTNERSHIPS
+              Partnerships
             </h1>
             <h3
               style={{
