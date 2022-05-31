@@ -23,6 +23,7 @@ export default function Hero({
 				objectFit="cover"
 				style={{ zIndex: -1, width: "100vw" }}
 				className={className}
+                                priority={true}
 			/>
 
 			<div
