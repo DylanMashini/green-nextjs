@@ -18,7 +18,7 @@ export default function Hero({
         layout="fill"
         objectFit="cover"
         style={{ zIndex: -1, width: "100vw" }}
-        quality="10"
+        quality="20"
       />
       <div
         style={{
