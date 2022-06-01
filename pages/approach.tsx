@@ -70,8 +70,12 @@ export default function Programs() {
             />
             {!mobile ? (
               <h2>
-                What does it mean to be a Sustainable Community?  In order to achieve our mission of providing sustainable living choices for our community, we have defined our vision for a
-                Sustainable Community.  Our approach includes four strategies to achieving this mission: Partnerships, Event Immersion, Awareness, and Community Engagement.
+                What does it mean to be a Sustainable Community? In order to
+                achieve our mission of providing sustainable living choices for
+                our community, we have defined our vision for a Sustainable
+                Community. Our approach includes four strategies to achieving
+                this mission: Partnerships, Event Immersion, Awareness, and
+                Community Engagement.
               </h2>
             ) : (
               <h2
@@ -79,8 +83,12 @@ export default function Programs() {
                   fontSize: "1em",
                 }}
               >
-                What does it mean to be a Sustainable Community?  In order to achieve our mission of providing sustainable living choices for our community, we have defined our vision for a
-                Sustainable Community.  Our approach includes four strategies to achieving this mission: Partnerships, Event Immersion, Awareness, and Community Engagement.
+                What does it mean to be a Sustainable Community? In order to
+                achieve our mission of providing sustainable living choices for
+                our community, we have defined our vision for a Sustainable
+                Community. Our approach includes four strategies to achieving
+                this mission: Partnerships, Event Immersion, Awareness, and
+                Community Engagement.
               </h2>
             )}
           </div>
@@ -109,7 +117,7 @@ export default function Programs() {
                 color: "white",
               }}
             >
-              Our vision of a sustainable community means there are:
+              We envision a sustainible community that has:
             </h1>
             <p
               style={{
