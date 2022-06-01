@@ -1,10 +1,13 @@
+.content,
+.three-col {
+  --content-height: 35em;
+}
 .content {
   position: relative;
   background-color: #195b92d1;
   text-align: left;
-  margin-top: -30em;
+  margin-top: calc(-1 * var(--content-height));
   z-index: 998;
-  /* height: 30vh; */
   width: 100vw;
   padding-left: 4vw;
   overflow: hidden;
@@ -13,7 +16,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 30em;
+  height: var(--content-height);
   overflow: hidden;
 }
 .three-col.mobile {
@@ -26,6 +29,8 @@
 }
 .content .item {
   max-width: 45vw;
+	height: 100%;
+	margin-top: 2em;
 }
 .content.mobile .item {
   max-width: 90vw;
