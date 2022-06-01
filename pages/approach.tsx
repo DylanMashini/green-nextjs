@@ -59,7 +59,7 @@ export default function Programs() {
                 height: "7vh",
                 backgroundColor: "#1A5B92",
                 marginRight: "10px",
-                borderRadius: "1px",
+                borderRadius: "2px",
               }}
             />
             {!mobile ? (
