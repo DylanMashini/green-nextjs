@@ -22,8 +22,7 @@ h6 {
 p,
 a,
 li {
-	  font-family: "Raleway", sans-serif;
-
+  font-family: "Raleway", sans-serif;
   text-shadow: 0.25px 0.25px 0.25px rgb(111, 111, 111);
 }
 
@@ -213,4 +212,13 @@ a {
 }
 .wrapper.mobile {
   padding-bottom: var(--mobile-footer-height);
+}
+
+.blue-line {
+  margin-top: 2em;
+  width: 8px;
+  height: 14vh;
+  background-color: #1a5b92;
+  margin-right: 10px;
+  border-radius: 1px;
 }

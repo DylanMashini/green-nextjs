@@ -58,14 +58,15 @@ export default function Programs() {
             }}
           >
             <div
-              style={{
-                marginTop: "2em",
-                width: "8px",
-                height: "14vh",
-                backgroundColor: "#1A5B92",
-                marginRight: "10px",
-                borderRadius: "1px",
-              }}
+              className={"blue-line"}
+              // style={{
+              //   marginTop: "2em",
+              //   width: "8px",
+              //   height: "14vh",
+              //   backgroundColor: "#1A5B92",
+              //   marginRight: "10px",
+              //   borderRadius: "1px",
+              // }}
             />
             {!mobile ? (
               <h2>
