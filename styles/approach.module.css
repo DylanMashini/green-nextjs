@@ -2,7 +2,7 @@
   position: relative;
   background-color: #195b92d1;
   text-align: left;
-  margin-top: -30vh;
+  margin-top: -25em;
   z-index: 998;
   /* height: 30vh; */
   width: 100vw;
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 30vh;
+  height: 25em;
   overflow: hidden;
 }
 .three-col.mobile {
@@ -22,6 +22,7 @@
 }
 .content.mobile {
   height: 100vh;
+  background-color: #195c92 !important;
 }
 .content .item {
   max-width: 45vw;

@@ -43,6 +43,7 @@ export default function Programs() {
             width: "60%",
             marginLeft: "40%",
             flexDirection: "column",
+            marginBottom: "15em",
           }}
         >
           <div
