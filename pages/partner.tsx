@@ -40,7 +40,7 @@ export default function Join() {
   return (
     <Layout mobile={mobile}>
       <Hero
-        ImageSrc="/partner.jpg"
+        ImageSrc={mobile ? "/partnerMobile.jpg" : "/partner.jpg"}
         mobile={mobile}
         className={`join-image${mobile ? " mobile" : ""}`}
         height={mobile ? "200vh" : "100vh"}
