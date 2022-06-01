@@ -69,8 +69,8 @@ export default function Programs() {
             />
             {!mobile ? (
               <h2>
-                In order to achieve our mission, we have defined 5 Pillars for a
-                Sustainable Community and 4 Strategies to make it happen.
+                What does it mean to be a Sustainable Community?  In order to achieve our mission of providing sustainable living choices for our community, we have defined our vision for a
+                Sustainable Community.  Our approach includes four strategies to achieving this mission: Partnerships, Event Immersion, Awareness, and Community Engagement.
               </h2>
             ) : (
               <h2
@@ -78,8 +78,8 @@ export default function Programs() {
                   fontSize: "1em",
                 }}
               >
-                In order to achieve our mission, we have defined 5 Pillars for a
-                Sustainable Community and 4 Strategies to make it happen.
+                What does it mean to be a Sustainable Community?  In order to achieve our mission of providing sustainable living choices for our community, we have defined our vision for a
+                Sustainable Community.  Our approach includes four strategies to achieving this mission: Partnerships, Event Immersion, Awareness, and Community Engagement.
               </h2>
             )}
           </div>
@@ -108,7 +108,7 @@ export default function Programs() {
                 color: "white",
               }}
             >
-              Our 5 pillars for a sustainable community are:
+              Our vision of a sustainable community means there are:
             </h1>
             <p
               style={{
@@ -123,7 +123,7 @@ export default function Programs() {
                 color: "white",
               }}
             >
-              Avalable Infrastructure: Sustainable living choices are possible
+              Available Infrastructure: Sustainable living choices are possible
               through the availability of infrastructure and services.
             </p>
             <p
