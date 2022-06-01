@@ -196,6 +196,7 @@ a {
 
 .wrapper {
   padding-bottom: var(--footer-height);
+  overflow: hidden;
 }
 .page-container {
   position: relative;

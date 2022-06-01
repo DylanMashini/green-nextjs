@@ -33,7 +33,11 @@ export default function Programs() {
   }
   return (
     <Layout mobile={mobile} prefetch={["/join"]}>
-      <Hero ImageSrc="/content/grass.jpeg" mobile={mobile}>
+      <Hero
+        ImageSrc="/content/grass.jpeg"
+        mobile={mobile}
+        height="calc(100vh + 20em)"
+      >
         <div
           className={`${styles["hero-text"]} Raleway ${
             mobile ? styles["mobile"] : ""
@@ -43,7 +47,7 @@ export default function Programs() {
             width: "60%",
             marginLeft: "40%",
             flexDirection: "column",
-            marginBottom: "15em",
+            marginTop: "20vh",
           }}
         >
           <div
