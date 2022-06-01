@@ -32,7 +32,7 @@ export default function Programs() {
     });
   }
   return (
-    <Layout mobile={mobile}>
+    <Layout mobile={mobile} prefetch={["/join"]}>
       <Hero ImageSrc="/content/grass.jpeg" mobile={mobile}>
         <div
           className={`${styles["hero-text"]} Raleway ${
@@ -89,7 +89,7 @@ export default function Programs() {
               router.push("/join/");
             }}
           >
-            Help us Meet This Goal
+            Learn About How You Can Help
           </Button>
         </div>
       </Hero>
