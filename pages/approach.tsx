@@ -56,7 +56,7 @@ export default function Programs() {
               style={{
                 marginTop: "2em",
                 width: "8px",
-                height: "14vh",
+                height: "7vh",
                 backgroundColor: "#1A5B92",
                 marginRight: "10px",
                 borderRadius: "1px",
@@ -64,10 +64,8 @@ export default function Programs() {
             />
             {!mobile ? (
               <h2>
-                Our Electricity, Recycling, and Food & Agriculture Programs
-                combined have the potential to reduce over 550,000 metric tons
-                of CO2 equivalent by 2030. That is equal to removing 118,508
-                gasoline-powered cars from the road for an entire year.
+                In order to achieve our mission, we have defined 5 Pillars for a
+                Sustainable Community and 4 Strategies to make it happen.
               </h2>
             ) : (
               <h2
@@ -75,10 +73,8 @@ export default function Programs() {
                   fontSize: "1em",
                 }}
               >
-                Our Electricity, Recycling, and Food & Agriculture Programs
-                combined have the potential to reduce over 550,000 metric tons
-                of CO2 equivalent by 2030. That is equal to removing 118,508
-                gasoline-powered cars from the road for an entire year.
+                In order to achieve our mission, we have defined 5 Pillars for a
+                Sustainable Community and 4 Strategies to make it happen.
               </h2>
             )}
           </div>
