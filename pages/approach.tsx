@@ -61,10 +61,10 @@ export default function Programs() {
               style={{
                 marginTop: "2em",
                 width: "8px",
-                height: "7vh",
+                height: "14vh",
                 backgroundColor: "#1A5B92",
                 marginRight: "10px",
-                borderRadius: "2px",
+                borderRadius: "1px",
               }}
             />
             {!mobile ? (
