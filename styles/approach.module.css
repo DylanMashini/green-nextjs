@@ -17,11 +17,11 @@
   overflow: hidden;
 }
 .three-col.mobile {
-  height: 100vh;
+  height: 160vh;
   flex-direction: column;
 }
 .content.mobile {
-  height: 100vh;
+  height: 160vh;
   background-color: #195c92 !important;
 }
 .content .item {
@@ -31,7 +31,7 @@
   max-width: 90vw;
 }
 .hero-text.mobile {
-  margin-top: -12vh;
+  margin-top: -20vh;
 }
 
 .item {
