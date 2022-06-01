@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50vh;
+  height: 30vh;
   overflow: hidden;
 }
 .three-col.mobile {
@@ -33,6 +33,10 @@
   margin-top: -12vh;
 }
 
+.item {
+  overflow: hidden;
+}
+
 .item h1,
 .item h2,
 .item h3,
@@ -40,6 +44,6 @@
 .item h5,
 .item p {
   color: white !important;
-  margin-top: 0;
-  margin-bottom: 8px;
+  /* margin-top: 0; */
+  /* margin-bottom: 8px; */
 }

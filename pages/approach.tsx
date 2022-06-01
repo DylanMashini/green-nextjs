@@ -102,74 +102,70 @@ export default function Programs() {
           className={`${styles["three-col"]} ${mobile ? styles["mobile"] : ""}`}
         >
           <div className={styles["item"]}>
-            <p
+            <h1
               style={{
                 color: "white",
               }}
             >
               Our 5 pillars for a sustainable community are:
-            </p>
-            <h1
-              style={{
-                color: "white",
-              }}
-            >
-              Empowered People
             </h1>
             <p
               style={{
                 color: "white",
               }}
             >
-              People feel empowered and energized in making sustainable choices.
+              Empowered People: People feel empowered and energized in making
+              sustainable choices.
             </p>
-            <h1 style={{ color: "white" }}>AVAILABLE INFRASTRUCTURE</h1>
             <p
               style={{
                 color: "white",
               }}
             >
-              Sustainable living choices are possible through the availability
-              of infrastructure and services.
+              Avalable Infrastructure: Sustainable living choices are possible
+              through the availability of infrastructure and services.
             </p>
-            <h1 style={{ color: "white" }}>Environmental Values</h1>
             <p
               style={{
                 color: "white",
               }}
             >
-              Environmental impact is prioritized in decision-making by
-              companies, governments and individuals.
-            </p>
-            <h1 style={{ color: "white" }}>Ethos of Sustainability</h1>
-            <p style={{ color: "white" }}>
-              Sustainable habits are the societal norm. Actions that harm the
-              planet are frowned upon, inconvenient, unavailable, or costly.
+              Environmental Values: Environmental impact is prioritized in
+              decision-making by companies, governments and individuals.
             </p>
             <p style={{ color: "white" }}>
-              <h1 style={{ color: "white" }}>Environmental Equity</h1>
-              Sustainable solutions are accessible to everyone in our community.
+              Ethos of Sustainability: Sustainable habits are the societal norm.
+              Actions that harm the planet are frowned upon, inconvenient,
+              unavailable, or costly.
+            </p>
+            <p style={{ color: "white" }}>
+              Environmental Equity: Sustainable solutions are accessible to
+              everyone in our community.
             </p>
           </div>
           <div className={styles["item"]}>
-            <p>Here's how we will accomplish our mission:</p>
-            <h1
+            <h1>Here's how we will accomplish our mission:</h1>
+            <p
               style={{
                 color: "white",
               }}
             >
-              Partnerships
-            </h1>
-            <h3
-              style={{
-                color: "white",
-                fontSize: "1rem",
-              }}
-            >
-              Our goal is to reduce over 150,000 metric tons CO2 equivalent by
-              2030 through programs enabling composting, food waste reduction,
-              and access to lower-carbon emitting diets.
-            </h3>
+              Partnerships: Partner with local mission-aligned companies to
+              establish and communicate sustainable living opportunities.
+            </p>
+            <p>
+              Event Immersion: Leverage local entertainment, sporting and
+              cultural venues to support sustainable habits.
+            </p>
+            <p>
+              Awareness: Empower the community with the knowledge of how to make
+              an impact and the magnitude of individual action.
+            </p>
+            <p>
+              Community Engagement: Engage with community to generate excitement
+              toward the mission, establish inclusive organizational culture,
+              and provide opportunities to make collective impact.
+            </p>
           </div>
         </div>
       </div>
