@@ -39,9 +39,10 @@ export default function Donate() {
 					display: "flex",
 					flexDirection: "column",
 					alignItems: "center",
-					justifyContent: "center",
-					height: "100vh",
+					justifyContent: "flex-start",
+					height: "200vh",
 				}}
+				id="flex-container"
 			>
 				<Image
 					src="/content/dropsOnLeaf.jpeg"
