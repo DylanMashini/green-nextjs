@@ -40,7 +40,7 @@ export default function Donate() {
 					flexDirection: "column",
 					alignItems: "center",
 					justifyContent: "flex-start",
-					height: "200vh",
+					height: "1050px",
 				}}
 				id="flex-container"
 			>
