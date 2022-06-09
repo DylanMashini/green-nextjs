@@ -45,7 +45,7 @@ export default function Donate() {
 				id="flex-container"
 			>
 				<Image
-					src="/content/dropsOnLeaf.jpeg"
+					src="/content/dropsOnLeafTall.jpeg"
 					layout="fill"
 					objectFit="cover"
 				/>
