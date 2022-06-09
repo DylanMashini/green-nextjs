@@ -162,7 +162,7 @@ export default function Navbar({ mobile }) {
 						<Burger open={open} setOpen={setOpen} />
 					</Grid.Container>
 					<Menu open={open}></Menu>
-					{/* <Link href="/donate">
+					<Link href="/donate">
 						<div
 							style={{
 								marginRight: "2em",
@@ -186,7 +186,7 @@ export default function Navbar({ mobile }) {
 								Donate
 							</h4>
 						</div>
-					</Link> */}
+					</Link>
 				</nav>
 			</>
 		);
@@ -327,7 +327,7 @@ export default function Navbar({ mobile }) {
 					</div> */}
 				</div>
 			</Grid.Container>
-			{/* <Link href="/donate">
+			<Link href="/donate">
 				<div
 					style={{
 						marginRight: "2em",
@@ -351,7 +351,7 @@ export default function Navbar({ mobile }) {
 						Donate
 					</h4>
 				</div>
-			</Link> */}
+			</Link>
 		</div>
 	);
 }
