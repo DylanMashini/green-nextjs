@@ -157,7 +157,7 @@ export default function About() {
                   marginTop: "0.5em",
                 }}
               >
-                Board of Directors
+                Chair, Board of Directors
               </h5>
             </div>
           </div>
