@@ -68,7 +68,7 @@ export default function About() {
           }}
         >
           <h3>
-            Our team is comprised of Cobb County residents and business owners who have a passion for the environment and recognize that sustainable solutions are already being addressed by existing organizations, and that we can can all collaborate to expedite results.
+            Our team is comprised of Cobb County residents and business owners who have a passion for the environment and recognize that sustainable solutions are already being addressed by existing organizations, and that we can all collaborate to expedite results.
           </h3>
           <h2>Find Us on Social Media</h2>
 
