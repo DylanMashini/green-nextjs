@@ -21,4 +21,4 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       
       - name: Run a one-line script
-        run: curl https://mygreenearth.org/api/dbRefresh
+        run: curl https://www.mygreenearth.org/api/dbRefresh
