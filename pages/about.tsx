@@ -68,101 +68,135 @@ export default function About() {
           }}
         >
           <h3>
-            Our team is comprised of Cobb County residents and business owners who have a passion for the environment and recognize that sustainable solutions are already being addressed by existing organizations, and that we can can all collaborate to expedite results.
+            Our team is comprised of Cobb County residents and business owners who have a passion for the environment and recognize that sustainable solutions are already being addressed by existing organizations, and that we can all collaborate to expedite results.
           </h3>
           <h2>Find Us on Social Media</h2>
 
-          <a
-            href="https://www.facebook.com/MyGreenEarthInc/"
-            target="_blank"
-            rel="noopener noreferer"
-            style={{
-              marginRight: "1.5em",
-            }}
-          >
-            <Image src="/facebook.png" height={30} width={30} />
-          </a>
-          <a href="https://www.linkedin.com/company/mygreenearth/">
-            <Image src="/linkedin.png" width="36" height="30" />
-          </a>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "flex-end",
-            width: "50vw",
-            flexWrap: "wrap",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "150px",
-              height: mobile ? "50%" : "100%",
-              marginRight: "1em",
-              justifyContent: "center",
-            }}
-          >
-            <div>
-              <Image
-                src="/content/Bethany.jpeg"
-                width="150"
-                height="187.5"
-                objectFit="cover"
-              />
-              <h3
-                style={{
-                  marginBottom: "0",
-                }}
-              >
-                Bethany Mashini
-              </h3>
-              <h5
-                style={{
-                  marginTop: "0.5em",
-                }}
-              >
-                Executive Director
-              </h5>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "150px",
-              height: mobile ? "50%" : "100%",
-              marginRight: "1em",
-              justifyContent: "center",
-            }}
-          >
-            <div>
-              <Image
-                src="/content/Jamey.jpeg"
-                width="150"
-                height="187.5"
-                objectFit="cover"
-              />
-              <h3
-                style={{
-                  marginBottom: "0",
-                }}
-              >
-                Jamey Moran
-              </h3>
-              <h5
-                style={{
-                  marginTop: "0.5em",
-                }}
-              >
-                Chair, Board of Directors
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  );
+
+					<a
+						href="https://www.facebook.com/MyGreenEarthInc/"
+						target="_blank"
+						rel="noopener noreferer"
+						style={{
+							marginRight: "1.5em",
+						}}
+					>
+						<Image src="/facebook.png" height={30} width={30} />
+					</a>
+					<a href="https://www.linkedin.com/company/mygreenearth/">
+						<Image src="/linkedin.png" width="36" height="30" />
+					</a>
+				</div>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "row",
+						justifyContent: "flex-end",
+						width: "50vw",
+						flexWrap: "wrap",
+					}}
+				>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "column",
+							width: "150px",
+							height: mobile ? "50%" : "100%",
+							marginRight: "1em",
+							justifyContent: "center",
+						}}
+					>
+						<div>
+							<Image
+								src="/content/Bethany.jpeg"
+								width="150"
+								height="187.5"
+								objectFit="cover"
+							/>
+							<h3
+								style={{
+									marginBottom: "0",
+								}}
+							>
+								Bethany Mashini
+							</h3>
+							<h5
+								style={{
+									marginTop: "0.5em",
+								}}
+							>
+								Executive Director
+							</h5>
+						</div>
+					</div>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "column",
+							width: "150px",
+							height: mobile ? "50%" : "100%",
+							marginRight: "1em",
+							justifyContent: "center",
+						}}
+					>
+						<div>
+							<Image
+								src="/content/Jamey.jpeg"
+								width="150"
+								height="187.5"
+								objectFit="cover"
+							/>
+							<h3
+								style={{
+									marginBottom: "0",
+								}}
+							>
+								Jamey Moran
+							</h3>
+							<h5
+								style={{
+									marginTop: "0.5em",
+								}}
+							>
+								Chair, Board of Directors
+							</h5>
+						</div>
+					</div>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "column",
+							width: "150px",
+							height: mobile ? "50%" : "100%",
+							marginRight: "1em",
+							justifyContent: "center",
+						}}
+					>
+						<div>
+							<Image
+								src="/content/Keith.jpg"
+								width="150"
+								height="187.5"
+								objectFit="cover"
+							/>
+							<h3
+								style={{
+									marginBottom: "0",
+								}}
+							>
+								Keith McNulty
+							</h3>
+							<h5
+								style={{
+									marginTop: "0.5em",
+								}}
+							>
+								Board of Directors
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Layout>
+	);
 }
