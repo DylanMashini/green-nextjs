@@ -1,6 +1,6 @@
 import styles from "../../styles/login.module.css";
 import { Input, Button, Spacer } from "@nextui-org/react";
-import server from "../../server";
+import server from "../../../server";
 import { useState } from "react";
 
 export default function Login() {

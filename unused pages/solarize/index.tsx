@@ -1,6 +1,6 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../../src/components/Navbar";
 import { useState, useEffect } from "react";
-import Hero from "../../components/Hero";
+import Hero from "../../src/components/Hero";
 import Image from "next/image";
 import styles from "../../styles/solarize.module.css";
 import Link from "next/link";

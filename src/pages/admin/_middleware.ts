@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { MongoClient } from "mongodb";
-import server from "../../server";
+import server from "../../../server";
 
 export async function middleware(request: NextRequest) {
 	if (
