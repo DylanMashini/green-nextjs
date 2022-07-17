@@ -48,6 +48,7 @@ export default function Donate() {
 					src="/content/DropsOnLeafTall.jpeg"
 					layout="fill"
 					objectFit="cover"
+					alt="background"
 				/>
 				<iframe
 					src="https://donorbox.org/embed/online-donation-33"

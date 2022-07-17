@@ -209,6 +209,7 @@ export default function Navbar({ mobile }) {
 							src="/logo.png"
 							width="276"
 							height="80"
+							alt="logo"
 						/>
 					</Link>
 				</div>

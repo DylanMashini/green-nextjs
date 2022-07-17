@@ -30,6 +30,7 @@ export default function ThreeDisplay({
 							src={images[0]}
 							layout="fill"
 							objectFit="cover"
+							alt="my green earth"
 						/>
 					</div>
 					<div
@@ -63,6 +64,7 @@ export default function ThreeDisplay({
 							src={images[1]}
 							layout="fill"
 							objectFit="cover"
+							alt="my green earth 2"
 						/>
 					</div>
 					<div
@@ -96,6 +98,7 @@ export default function ThreeDisplay({
 							src={images[2]}
 							layout="fill"
 							objectFit="cover"
+							alt="my green earth 3"
 						/>
 					</div>
 					<div
