@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from "mongodb";
 import * as bcrypt from "bcryptjs";
-import { uuidv4 as uuid } from "uuid";
+import { v4 as uuid } from "uuid";
 
 export default async function register(
 	req: NextApiRequest,

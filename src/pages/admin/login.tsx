@@ -2,12 +2,20 @@ import styles from "../../styles/login.module.css";
 import { Input, Button, Spacer } from "@nextui-org/react";
 import server from "../../../server";
 import { useState } from "react";
+import { useCookies } from "react-cookie";
+import { useRouter } from "next/router";
 
 export default function Login() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState("");
+	const [cookie, setCookie] = useCookies(["user"]);
+	const [auth, setAuth] = useState(false);
+	const router = useRouter();
 
+	if (!auth) {
+		setCookie("user", null, { path: "/", maxAge: -1, sameSite: true });
+	}
 	const signIn = async () => {
 		const { session } = await (
 			await fetch(`${server}/api/auth/login`, {
@@ -23,26 +31,49 @@ export default function Login() {
 		).json();
 		if (!session) {
 			setError("Invalid email or password");
+			return;
 		}
 		//save session in cookies
+		setError("");
+		setAuth(true);
+		setCookie(
+			"user",
+			JSON.stringify({
+				email: email,
+				session: session,
+			}),
+			{
+				path: "/",
+				maxAge: 86400,
+				sameSite: true,
+			}
+		);
+		router.push("/admin");
 	};
 	return (
 		<div className={styles["container"]}>
 			<h1>Login</h1>
 			<Input
-				bordered
-				labelPlaceholder="email"
-				type="email"
+				label="email"
 				value={email}
+				size="md"
+				width="20em"
 				onChange={e => setEmail(e.target.value)}
+				css={{
+					height: "4em",
+				}}
 			/>
-			<Spacer y={1.6} />
+
 			<Input
-				bordered
-				labelPlaceholder="password"
 				type="password"
-				onChange={e => setPassword(e.target.value)}
+				label="password"
 				value={password}
+				size="md"
+				width="20em"
+				onChange={e => setPassword(e.target.value)}
+				css={{
+					height: "4em",
+				}}
 			/>
 			<Spacer y={1.6} />
 

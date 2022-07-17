@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from "mongodb";
 import * as bcrypt from "bcryptjs";
-import { uuidv4 as uuid } from "uuid";
+import { v4 as uuid } from "uuid";
 
 export default async function login(req: NextApiRequest, res: NextApiResponse) {
 	if (req.method != "POST") {
@@ -19,8 +19,8 @@ export default async function login(req: NextApiRequest, res: NextApiResponse) {
 		const user = await collection.findOne({ email: req.body.email });
 		if (user) {
 			//user exists, do bcrypt check
-			const res = bcrypt.compareSync(req.body.password, user.password);
-			if (res) {
+			const result = bcrypt.compareSync(req.body.password, user.password);
+			if (result) {
 				const session = uuid();
 				await collection.updateOne(
 					{ email: req.body.email },

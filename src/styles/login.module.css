@@ -7,3 +7,6 @@
     width: 100vw;
 }
 
+.container div {
+    overflow: hidden;
+}
