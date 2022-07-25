@@ -1,6 +1,7 @@
 import { MongoClient } from "mongodb";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { v4 as uuid } from "uuid";
+import server from "../../../server";
 
 export default async function handler(
 	req: NextApiRequest,
@@ -31,6 +32,7 @@ export default async function handler(
 			address,
 			id: uuid(),
 		});
+		await fetch(`${server}/api/revalidateEvents`);
 		res.status(200).end("Event created");
 		return;
 	} finally {

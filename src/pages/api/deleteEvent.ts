@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from "mongodb";
+import server from "../../../server";
 
 export default async function deleteEvent(
 	req: NextApiRequest,
@@ -27,6 +28,7 @@ export default async function deleteEvent(
 		}
 		const collection = db.collection("events");
 		await collection.deleteOne({ id });
+		await fetch(`${server}/api/revalidateEvents`);
 		res.status(200).end("Event deleted");
 	} finally {
 		client.close();

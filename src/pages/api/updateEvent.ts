@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from "mongodb";
+import server from "../../../server";
 
 export default async function updateEvent(
 	req: NextApiRequest,
@@ -33,6 +34,13 @@ export default async function updateEvent(
 			}
 		);
 		if (result) {
+			await fetch(`${server}/api/revalidateEvents`, {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ id }),
+			});
 			res.status(200).end("Event updated");
 			return;
 		} else {
