@@ -11,6 +11,7 @@ export default function NewEvent() {
 	const [date, setDate] = useState("");
 	const [description, setDescription] = useState("");
 	const [url, setUrl] = useState("");
+	const router = useRouter();
 
 	const Submit = () => {
 		if (!(title && location && date && description)) {
@@ -35,7 +36,7 @@ export default function NewEvent() {
 				alert(
 					"Event added successfully, it may take up to five minutes to show up on the website"
 				);
-				window.location.reload();
+				router.push("/admin");
 			}
 		});
 	};
