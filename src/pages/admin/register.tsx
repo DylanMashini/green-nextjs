@@ -3,8 +3,10 @@ import { Input, Button, Spacer } from "@nextui-org/react";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
 import server from "../../../server";
+import { useRouter } from "next/router";
 
 export default function Register() {
+	const router = useRouter();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [registrationCode, setRegistrationCode] = useState("");
@@ -42,6 +44,7 @@ export default function Register() {
 				sameSite: true,
 			}
 		);
+		router.push("/admin");
 	};
 	return (
 		<div className={styles["container"]}>
