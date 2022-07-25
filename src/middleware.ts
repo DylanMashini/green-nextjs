@@ -10,10 +10,8 @@ export async function middleware(request: NextRequest) {
 		) {
 			return null;
 		}
-		// @ts-ignore
-		if (request.cookies.user) {
-			// @ts-ignore
-			const cookie = JSON.parse(request.cookies.user);
+		if (request.cookies.get("user")) {
+			const cookie = JSON.parse(request.cookies.get("user"));
 			if (!cookie.session || !cookie.email) {
 				return NextResponse.redirect(`${server}/admin/login`);
 			}
