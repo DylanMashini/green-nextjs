@@ -13,6 +13,9 @@ export default async function register(
 	if (!req.body.email || !req.body.password) {
 		res.status(400).send("Missing parameters");
 	}
+	if (req.body.pin !== "Dejg791118!") {
+		res.status(401).send("Unauthorized");
+	}
 	const client = new MongoClient(process.env.MONGO_URI);
 	try {
 		await client.connect();

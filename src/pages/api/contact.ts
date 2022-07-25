@@ -34,7 +34,7 @@ export default async function Contact(
 	try {
 		await client.connect();
 		console.log("here");
-		const db = client.db("mygreenearth");
+		const db = client.db("my-green-earth");
 		const collection = db.collection("users");
 		const user = await collection.findOne({ email: email });
 		if (user) {

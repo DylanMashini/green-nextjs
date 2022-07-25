@@ -10,7 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@nextui-org/react": "^1.0.4-beta.5",
+    "@nextui-org/react": "^1.0.0-beta.9",
     "@sendgrid/mail": "^7.6.2",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",

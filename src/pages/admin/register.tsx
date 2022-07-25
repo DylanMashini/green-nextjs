@@ -7,6 +7,7 @@ import server from "../../../server";
 export default function Register() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const [registrationCode, setRegistrationCode] = useState("");
 	const [error, setError] = useState("");
 	const [cookie, setCookie] = useCookies(["user"]);
 
@@ -20,6 +21,7 @@ export default function Register() {
 				body: JSON.stringify({
 					email: email,
 					password: password,
+					pin: registrationCode,
 				}),
 			})
 		).json();
@@ -62,6 +64,17 @@ export default function Register() {
 				size="md"
 				width="20em"
 				onChange={e => setPassword(e.target.value)}
+				css={{
+					height: "4em",
+				}}
+			/>
+			<Input
+				type="password"
+				label="password"
+				value={registrationCode}
+				size="md"
+				width="20em"
+				onChange={e => setRegistrationCode(e.target.value)}
 				css={{
 					height: "4em",
 				}}
