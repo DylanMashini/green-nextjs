@@ -23,7 +23,7 @@ export default function AdminHome({ events }) {
 				id,
 				session,
 			}),
-		});
+		}).then(window.location.reload);
 	};
 
 	const cards = events.map(event => {
