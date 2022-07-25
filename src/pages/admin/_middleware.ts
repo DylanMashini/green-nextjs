@@ -4,6 +4,7 @@ import { MongoClient } from "mongodb";
 import server from "../../../server";
 
 export async function middleware(request: NextRequest) {
+	console.log(server);
 	if (
 		request.page.name == "/admin/login" ||
 		request.page.name == "/admin/register"
