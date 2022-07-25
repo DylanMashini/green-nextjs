@@ -50,6 +50,7 @@ export default function Footer({ mobile }) {
 									src="/facebook.png"
 									width="30"
 									height="30"
+									alt="facebook"
 								/>
 							</a>
 							<a
@@ -61,6 +62,7 @@ export default function Footer({ mobile }) {
 									src="/linkedin.png"
 									width="36"
 									height="30"
+									alt="linkedin"
 								/>
 							</a>
 						</div>
@@ -102,6 +104,7 @@ export default function Footer({ mobile }) {
 									src="/logo2.png"
 									width="38"
 									height={"31"}
+									alt="logo"
 								/>
 							</div>
 							<p>
@@ -137,6 +140,7 @@ export default function Footer({ mobile }) {
 									src="/facebook.png"
 									width="40"
 									height="40"
+									alt="facebook"
 								/>
 							</a>
 							<a
@@ -148,6 +152,7 @@ export default function Footer({ mobile }) {
 									src="/linkedin.png"
 									width="47"
 									height="40"
+									alt="linkedin"
 								/>
 							</a>
 							<p
