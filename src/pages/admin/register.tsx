@@ -69,8 +69,7 @@ export default function Register() {
 				}}
 			/>
 			<Input
-				type="password"
-				label="password"
+				label="Registration Code"
 				value={registrationCode}
 				size="md"
 				width="20em"
