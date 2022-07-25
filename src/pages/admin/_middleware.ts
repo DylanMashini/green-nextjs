@@ -5,12 +5,14 @@ import server from "../../../server";
 
 export async function middleware(request: NextRequest) {
 	if (
-		request.page.name == "/admin/login" ||
-		request.page.name == "/admin/register"
+		request.nextUrl.pathname == "/admin/login" ||
+		request.nextUrl.pathname == "/admin/register"
 	) {
 		return null;
 	}
+	// @ts-ignore
 	if (request.cookies.user) {
+		// @ts-ignore
 		const cookie = JSON.parse(request.cookies.user);
 		if (!cookie.session || !cookie.email) {
 			return NextResponse.redirect(`${server}/admin/login`);
