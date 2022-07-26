@@ -316,6 +316,24 @@ export default function Navbar({ mobile }) {
 							<h3 className="nav-item">Join Us</h3>
 						</Link>
 					</Grid>
+
+					<div className={styles.spacer} />
+					{/* <div className={styles.dropdownContent}>
+						<Link href="/#programs">
+							<a className={styles.item}>Team</a>
+						</Link>
+						<Link href="/#programs">
+							<a className={styles.item}>Location</a>
+						</Link>
+					</div> */}
+				</div>
+				<div className={styles.dropdown}>
+					<Grid>
+						<Link href="/events">
+							<h3 className="nav-item">Events</h3>
+						</Link>
+					</Grid>
+
 					<div className={styles.spacer} />
 					{/* <div className={styles.dropdownContent}>
 						<Link href="/#programs">
