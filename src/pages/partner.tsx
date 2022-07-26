@@ -11,7 +11,7 @@ export default function Join() {
 	const getMobile = () => {
 		setWidth(window.innerWidth);
 		setHeight(window.innerHeight);
-		if (window.innerWidth < 905) {
+		if (window.innerWidth < 1079) {
 			setMobile(true);
 		} else {
 			setMobile(false);
