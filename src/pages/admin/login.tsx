@@ -4,6 +4,7 @@ import server from "../../../server";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
 import { useRouter } from "next/router";
+import Link from "next/link"
 
 export default function Login() {
 	const [email, setEmail] = useState("");
@@ -78,6 +79,7 @@ export default function Login() {
 			<Spacer y={1.6} />
 
 			<Button onClick={e => signIn()}>Submit</Button>
+			<Link href="/admin/register"><a>Click Here to Register</a></Link>
 		</div>
 	);
 }
