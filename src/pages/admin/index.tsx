@@ -7,10 +7,6 @@ import server from "../../../server";
 export default function AdminHome({ events }) {
 	const router = useRouter();
 	const deleteEvent = id => {
-		const session = JSON.parse(
-			decodeURIComponent(document.cookie.split(";")[0].split("=")[1])
-		).session;
-		console.log(session);
 		if (!confirm("Are you sure you want to delete this event?")) {
 			return;
 		}
@@ -21,7 +17,6 @@ export default function AdminHome({ events }) {
 			},
 			body: JSON.stringify({
 				id,
-				session,
 			}),
 		}).then(() => window.location.reload());
 	};

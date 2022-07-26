@@ -11,7 +11,7 @@ export default async function deleteEvent(
 		return;
 	}
 
-	const { id, session } = req.body;
+	const { id } = req.body;
 	if (!(id && session)) {
 		res.status(400).end("Missing required fields");
 		return;
@@ -21,11 +21,6 @@ export default async function deleteEvent(
 	try {
 		await client.connect();
 		const db = client.db("my-green-earth");
-		const user = await (await db.collection("admin")).findOne({ session });
-		if (!user) {
-			res.status(401).end("Unauthorized");
-			return;
-		}
 		const collection = db.collection("events");
 		await collection.deleteOne({ id });
 		await fetch(`${server}/api/revalidateEvents`);
