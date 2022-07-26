@@ -94,12 +94,12 @@ export default function NewEvent() {
 				css={{
 					marginTop: "2.5rem",
 				}}
-				onKeyDown={e => {
-					if (e.key === "Enter") {
-						e.preventDefault();
-						setDescription(description + "\n");
-					}
-				}}
+				// onKeyDown={e => {
+				// 	if (e.key === "Enter") {
+				// 		e.preventDefault();
+				// 		setDescription(description + "\n");
+				// 	}
+				// }}
 				size="lg"
 				value={description}
 				onChange={e => setDescription(e.target.value)}
