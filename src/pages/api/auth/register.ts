@@ -16,6 +16,7 @@ export default async function register(
 	if (req.body.pin !== "Lagi2030!") {
 		res.status(401).send("Unauthorized");
 	}
+	const hash = bcrypt.hashSync(req.body.password, 12);
 	const client = new MongoClient(process.env.MONGO_URI);
 	try {
 		await client.connect();
@@ -26,7 +27,6 @@ export default async function register(
 			res.status(400).send("User already exists");
 			return;
 		}
-		const hash = bcrypt.hashSync(req.body.password, 12);
 		const session = uuid();
 		await collection.insertOne({
 			email: req.body.email,
