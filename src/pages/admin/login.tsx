@@ -79,7 +79,10 @@ export default function Login() {
 			<Spacer y={1.6} />
 
 			<Button onClick={e => signIn()}>Submit</Button>
-			<Link href="/admin/register"><a>Click Here to Register</a></Link>
+			<Link style={{
+				marginTop: "2.5em",
+				textDecoration: "underline",
+			}} href="/admin/register"><a>Click Here to Register</a></Link>
 		</div>
 	);
 }
