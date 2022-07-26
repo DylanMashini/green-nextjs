@@ -86,6 +86,9 @@ export default function Navbar({ mobile }) {
 					<Link href="/join">
 						<a>Join Us</a>
 					</Link>
+					<Link href="/events">
+						<a>Events</a>
+					</Link>
 				</StyledMenu>
 			);
 		};
