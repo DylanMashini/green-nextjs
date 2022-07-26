@@ -1,5 +1,5 @@
 import styles from "../../styles/login.module.css";
-import { Input, Button, Spacer } from "@nextui-org/react";
+import { Input, Button, Spacer, Text } from "@nextui-org/react";
 import server from "../../../server";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
@@ -79,6 +79,7 @@ export default function Login() {
 			<Spacer y={1.6} />
 
 			<Button onClick={e => signIn()}>Submit</Button>
+			{error && <Text color="error">{error}</Text>}
 			<Link
 				style={{
 					marginTop: "2.5em",

@@ -1,5 +1,5 @@
 import styles from "../../styles/login.module.css";
-import { Input, Button, Spacer } from "@nextui-org/react";
+import { Input, Button, Spacer, Text } from "@nextui-org/react";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
 import server from "../../../server";
@@ -12,6 +12,10 @@ export default function Register() {
 	const [registrationCode, setRegistrationCode] = useState("");
 	const [error, setError] = useState("");
 	const [cookie, setCookie] = useCookies(["user"]);
+	const [auth, setAuth] = useState(false);
+	if (!auth) {
+		setCookie("user", null, { path: "/", maxAge: -1, sameSite: true });
+	}
 
 	const register = async () => {
 		const { session } = await (
@@ -32,6 +36,7 @@ export default function Register() {
 			return;
 		}
 		//save session in cookies
+		setAuth(true);
 		setCookie(
 			"user",
 			JSON.stringify({
@@ -84,6 +89,7 @@ export default function Register() {
 			<Spacer y={1.6} />
 
 			<Button onClick={e => register()}>Submit</Button>
+			{error && <Text color="error">{error}</Text>}
 		</div>
 	);
 }
