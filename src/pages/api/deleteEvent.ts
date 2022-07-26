@@ -12,7 +12,7 @@ export default async function deleteEvent(
 	}
 
 	const { id } = req.body;
-	if (!(id && session)) {
+	if (!id) {
 		res.status(400).end("Missing required fields");
 		return;
 	}
