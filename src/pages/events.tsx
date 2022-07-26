@@ -99,7 +99,7 @@ export default function Events({ events }) {
 	return (
 		<Layout mobile={mobile}>
 			<Image
-				src="/content/ocean.jpeg"
+				src="/content/ocean.jpg"
 				style={{
 					zIndex: -1,
 				}}
