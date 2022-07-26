@@ -50,6 +50,7 @@ export default function AdminHome({ events }) {
 					<Text
 						css={{
 							textAlign: "center",
+							whiteSpace: "pre-line",
 						}}
 					>
 						{event.description}

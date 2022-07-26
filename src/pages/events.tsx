@@ -88,6 +88,7 @@ export default function Events({ events }) {
 					<Text
 						css={{
 							textAlign: "center",
+							whiteSpace: "pre-line",
 						}}
 					>
 						{event.description}

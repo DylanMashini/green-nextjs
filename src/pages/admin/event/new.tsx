@@ -162,6 +162,7 @@ export default function NewEvent() {
 							<Text
 								css={{
 									textAlign: "center",
+									whiteSpace: "pre-line",
 								}}
 							>
 								{description}
