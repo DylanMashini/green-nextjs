@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as ga from "../lib/ga";
+import { SSRProvider } from "@react-aria/ssr";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
@@ -17,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		};
 	}, [router.events]);
 	return (
-		<>
+		<SSRProvider>
 			<Head>
 				<link
 					rel="shortcut icon"
@@ -34,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 			</Head>
 			<Component {...pageProps} />
-		</>
+		</SSRProvider>
 	);
 }
 

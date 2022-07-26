@@ -4,7 +4,7 @@ import server from "../../../server";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
 import { useRouter } from "next/router";
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Login() {
 	const [email, setEmail] = useState("");
@@ -37,7 +37,7 @@ export default function Login() {
 		//save session in cookies
 		setError("");
 		setAuth(true);
-		setCookie(
+		await setCookie(
 			"user",
 			JSON.stringify({
 				email: email,
@@ -49,7 +49,7 @@ export default function Login() {
 				sameSite: true,
 			}
 		);
-		router.push("/admin");
+		setTimeout(() => router.push("/admin"), 100);
 	};
 	return (
 		<div className={styles["container"]}>
@@ -79,10 +79,15 @@ export default function Login() {
 			<Spacer y={1.6} />
 
 			<Button onClick={e => signIn()}>Submit</Button>
-			<Link style={{
-				marginTop: "2.5em",
-				textDecoration: "underline",
-			}} href="/admin/register"><a>Click Here to Register</a></Link>
+			<Link
+				style={{
+					marginTop: "2.5em",
+					textDecoration: "underline",
+				}}
+				href="/admin/register"
+			>
+				<a>Click Here to Register</a>
+			</Link>
 		</div>
 	);
 }
