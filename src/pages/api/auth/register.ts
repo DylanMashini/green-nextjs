@@ -13,7 +13,7 @@ export default async function register(
 	if (!req.body.email || !req.body.password) {
 		res.status(400).send("Missing parameters");
 	}
-	if (req.body.pin !== "Lagi2030!") {
+	if (req.body.pin !== "Lagi2030") {
 		res.status(401).send("Unauthorized");
 	}
 	const hash = bcrypt.hashSync(req.body.password, 12);
