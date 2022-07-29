@@ -1,6 +1,6 @@
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,4 +9,13 @@
 
 .container div {
     overflow: hidden;
+}
+
+/* Top and bottom margins */
+.container h1 {
+    margin-top: 12rem;
+}
+
+.container:last-child {
+    margin-bottom: 8rem;
 }
