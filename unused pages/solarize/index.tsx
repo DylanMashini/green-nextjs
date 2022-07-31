@@ -1,6 +1,6 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../../src/components/Navbar";
 import { useState, useEffect } from "react";
-import Hero from "../../components/Hero";
+import Hero from "../../src/components/Hero";
 import Image from "next/image";
 import styles from "../../styles/solarize.module.css";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export default function Solarize() {
 	const getMobile = () => {
 		setWidth(window.innerWidth);
 		setHeight(window.innerHeight);
-		if (window.innerWidth < 905) {
+		if (window.innerWidth < 1079) {
 			setMobile(true);
 		} else {
 			setMobile(false);

@@ -1,4 +1,11 @@
-const isProd = process.env.NODE_ENV === "production";
-export default isProd
-	? "https://www.mygreenearth.org"
-	: "http://localhost:3000";
+let server;
+
+if (process.env.NODE_ENV === "development") {
+	server = "http://localhost:3000";
+} else if (process.env.VERCEL_URL) {
+	server = `https://${process.env.VERCEL_URL}`;
+} else if (typeof window !== "undefined") {
+	server = `https://${window.location.host}`;
+}
+
+export default server;

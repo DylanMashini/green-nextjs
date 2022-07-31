@@ -1,0 +1,41 @@
+.content,
+.three-col {
+  --content-height: 15em;
+}
+
+.content {
+  position: absolute;
+  background-color: #195b92d1;
+  text-align: left;
+  margin-top: calc(-1 * var(--content-height));
+  z-index: 998;
+  /* height: 30vh; */
+  width: 100vw;
+  padding-left: 4vw;
+  overflow: hidden;
+}
+.three-col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: var(--content-height);
+  overflow: hidden;
+}
+.three-col.mobile {
+  height: 100vh;
+  flex-direction: column;
+}
+.content.mobile {
+  height: 100vh;
+  background-color: #195c92 !important;
+}
+.content .item {
+  max-width: 25vw;
+}
+.content.mobile .item {
+  max-width: 90vw;
+}
+.hero-text.mobile {
+  margin-top: -12vh;
+}
+

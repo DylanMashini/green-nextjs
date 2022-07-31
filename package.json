@@ -10,9 +10,10 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@nextui-org/react": "^1.0.4-beta.5",
+    "@nextui-org/react": "^1.0.0-beta.9",
     "@sendgrid/mail": "^7.6.2",
     "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "canvas": "2.6.1",
     "mongodb": "^4.5.0",
     "next": "^12.2.2",
@@ -23,7 +24,8 @@
     "react-dom": "npm:@preact/compat",
     "react-ssr-prepass": "npm:preact-ssr-prepass",
     "sharp": "^0.30.6",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/node": "17.0.23",

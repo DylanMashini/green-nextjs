@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap');
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.spacer {
+    height: 1em;
+}
+.dropdownContent {
+
+    display: none;
+    position: absolute;
+    background-color: rgba(30, 29, 29, 0.741);
+    backdrop-filter: blur(10px);
+    width: 15em;
+    margin-left: 0.5vw;
+    min-height: 11vh;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.item {
+    color: #fff;
+    font-family: 'Raleway';
+    display: block;
+    padding: 0.5vh;
+    font-size: 1em;
+    text-align: left;
+    cursor: pointer;
+}
+.item:hover {
+    text-decoration: underline;
+}
