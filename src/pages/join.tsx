@@ -52,20 +52,13 @@ export default function Join() {
 						>
 							<p style={pStyle}>
 								Interested in making an impact for
-								sustainability in Cobb County? We would love to
-								have you join us! We are looking for individual
-								members, civic organizations and schools to
-								volunteer with us. Whatever your interests and
-								skills are, there is a place for you!
+								sustainability in Cobb County? Sign up here to receive emails from us.
 							</p>
 							<p style={pStyle}>
-								We are also seeking ambassadors to help with
-								efforts in the following cities: Acworth,
-								Austell, Kennesaw, Marietta, Powder Springs and
-								Smyrna.
+								If you are interested in volunteering with My Green Earth to impact sustainability throughout our communities, please indicate so on this form and we will be in contact.
 							</p>
 							<p style={pStyle}>
-								Complete the form below or email{" "}
+								Please email{" "}
 								<a href="mailto:info@mygreenearth.org">
 									info@mygreenearth.org
 								</a>{" "}
