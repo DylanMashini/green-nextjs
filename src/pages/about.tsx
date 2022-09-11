@@ -114,7 +114,7 @@ export default function About() {
 							display: "flex",
 							flexDirection: "column",
 							width: "150px",
-							height: mobile ? "50%" : "100%",
+							height: mobile ? "33%" : "100%",
 							marginRight: "1em",
 							justifyContent: "center",
 						}}
@@ -148,7 +148,7 @@ export default function About() {
 							display: "flex",
 							flexDirection: "column",
 							width: "150px",
-							height: mobile ? "50%" : "100%",
+							height: mobile ? "33%" : "100%",
 							marginRight: "1em",
 							justifyContent: "center",
 						}}
@@ -182,7 +182,7 @@ export default function About() {
 							display: "flex",
 							flexDirection: "column",
 							width: "150px",
-							height: mobile ? "50%" : "100%",
+							height: mobile ? "33%" : "100%",
 							marginRight: "1em",
 							justifyContent: "center",
 						}}
