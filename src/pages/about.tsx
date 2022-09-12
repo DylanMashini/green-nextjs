@@ -57,7 +57,7 @@ export default function About() {
 				style={{
 					display: "flex",
 					flexDirection: "row",
-					height: mobile ? "200vh" : "50vh",
+					height: mobile ? "60rem" : "50vh",
 				}}
 			>
 				<div
