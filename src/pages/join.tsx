@@ -57,9 +57,7 @@ export default function Join() {
                   County? Sign up here to receive emails from us.
                 </p>
                 <p style={pStyle}>
-                  If you are interested in volunteering with My Green Earth to
-                  impact sustainability throughout our communities, please
-                  indicate so on this form and we will be in contact.
+                  If you are interested in being more involved, let us know!  Do you love books or movies?  Host a book or movie club!  Are you creative?  Design our swag, design our booths, help amplify our message on social media, write content and grant proposals.  Are you a connector?  Help us find and build relationships with mission-aligned organizations or become a Green Ambassador for your neighborhood, business, or place of worship.  Do you love data and research?  Help us measure our impact potential.  Other ideas? Let us know!
                 </p>
                 <p style={pStyle}>
                   Please email{" "}
