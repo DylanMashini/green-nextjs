@@ -127,7 +127,7 @@ export default function Programs() {
 								fontSize: "1rem",
 							}}
 						>
-							Our goal is to reduce over 100,000 metric tons of
+							Our goal is to reduce over 333,000 metric tons of
 							CO2 equivalent by 2030 through empowering Cobb
 							County to install smart thermostats, rooftop solar,
 							and shifting energy use to off-peak times.
@@ -147,7 +147,7 @@ export default function Programs() {
 								fontSize: "1rem",
 							}}
 						>
-							Our goal is to reduce over 300,000 metric tons CO2
+							Our goal is to reduce over 365,000 metric tons CO2
 							equivalent by 2030 through increased access to
 							recycling infrastructure in Cobb County businesses,
 							sporting and entertainment venues.{" "}
@@ -167,7 +167,7 @@ export default function Programs() {
 								fontSize: "1rem",
 							}}
 						>
-							Our goal is to reduce over 150,000 metric tons CO2
+							Our goal is to reduce over 152,000 metric tons CO2
 							equivalent by 2030 through programs enabling
 							composting, food waste reduction, and access to
 							lower-carbon emitting diets.
