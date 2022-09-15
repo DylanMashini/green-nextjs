@@ -67,9 +67,9 @@ export default function Programs() {
 							<h2>
 								Our Electricity, Recycling, and Food &
 								Agriculture Programs combined have the potential
-								to reduce over 550,000 metric tons of CO2
+								to reduce over 850,000 metric tons of CO2
 								equivalent by 2030. That is equal to removing
-								118,508 gasoline-powered cars from the road for
+								183,000 gasoline-powered cars from the road for
 								an entire year.
 							</h2>
 						) : (
@@ -80,9 +80,9 @@ export default function Programs() {
 							>
 								Our Electricity, Recycling, and Food &
 								Agriculture Programs combined have the potential
-								to reduce over 550,000 metric tons of CO2
+								to reduce over 850,000 metric tons of CO2
 								equivalent by 2030. That is equal to removing
-								118,508 gasoline-powered cars from the road for
+								183,000 gasoline-powered cars from the road for
 								an entire year.
 							</h2>
 						)}
