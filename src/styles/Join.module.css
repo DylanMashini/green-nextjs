@@ -1,0 +1,5 @@
+@media (max-width: 964px) {
+  .wrapper img {
+    object-position: -2000px 0;
+  }
+}
