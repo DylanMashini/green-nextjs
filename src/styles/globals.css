@@ -107,20 +107,24 @@ a {
   margin-left: 8vw;
   width: 40rem;
 }
-.hero-mobile-text {
-  font-size: 1rem !important;
-  word-wrap: break-word;
-  white-space: pre-wrap;
-  width: 90vw !important;
-  min-width: 80vw;
+
+@media (max-width: 1079px) {
+  .hero-text {
+    font-size: 1rem !important;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    width: 90vw !important;
+    min-width: 80vw;
+  }
+  .hero-text-h2 {
+    font-size: 1.5rem !important;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    width: 90vw !important;
+    min-width: 80vw;
+  }
 }
-.hero-mobile-text-h2 {
-  font-size: 1.5rem !important;
-  word-wrap: break-word;
-  white-space: pre-wrap;
-  width: 90vw !important;
-  min-width: 80vw;
-}
+
 .hero button {
   margin-left: 8vw;
 }
@@ -140,7 +144,11 @@ a {
   right: 1em;
   font-size: 0.8em;
 }
-
+@media (max-width: 1079px) {
+  .content h2 {
+    font-size: 1rem;
+  }
+}
 .content {
   position: absolute;
   background-color: #195b92d1;
@@ -155,36 +163,23 @@ a {
 .content h2 {
   font-family: "News Cycle", sans-serif;
 }
-.content.solar.mobile {
-  background-color: #195c92 !important;
-}
-.content.mobile h2 {
-  font-size: 1rem;
-}
 .content h2 {
   color: white;
   font-family: "Raleway", sans-serif;
 }
-.solar.mobile {
-  flex-direction: column !important;
-  height: 100vh !important;
-}
-
 .clickable {
   cursor: pointer;
 }
+
 .Raleway {
   font-family: "Raleway", serif;
 }
+
 .join-image {
   object-fit: none;
   object-position: 0 4vw;
   background-color: #273f4b;
 }
-/* .join-image.mobile {
-	object-fit: none;
-	object-position: -30em 4vw;
-} */
 
 .footer {
   position: absolute;
@@ -194,8 +189,10 @@ a {
   height: var(--footer-height);
 }
 
-.footer.mobile {
-  height: var(--mobile-footer-height) !important;
+@media (max-width: 1079px) {
+  .footer {
+    height: var(--mobile-footer-height);
+  }
 }
 
 .wrapper {
@@ -210,8 +207,10 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
-.wrapper.mobile {
-  padding-bottom: var(--mobile-footer-height);
+@media (max-width: 1079px) {
+  .wrapper {
+    padding-bottom: var(--mobile-footer-height);
+  }
 }
 
 .blue-line {
