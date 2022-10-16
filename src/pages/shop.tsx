@@ -2,6 +2,15 @@ import Layout from "../components/Layout";
 import { useState, useEffect } from "react";
 import type { itemType } from "../types/shop";
 import Image from "next/image";
+import { createClient } from "next-sanity";
+import { useNextSanityImage } from "next-sanity-image";
+
+const client = createClient({
+  projectId: "x68be079",
+  dataset: "production",
+  useCdn: false,
+  apiVersion: "2022-09-19",
+});
 
 export default function Shop({ items }: { items: itemType[] }) {
   const [mobile, setMobile] = useState(false);
@@ -29,15 +38,11 @@ export default function Shop({ items }: { items: itemType[] }) {
   }
 
   const itemComponents = items.map((item, index) => {
+    const imageProps = useNextSanityImage(client, item.image);
     return (
       <div key={index} className="w-32 h-48 sm:w-48 sm:h-72">
-        <div className="w-32 h-32 sm:h-48 sm:w-48 bg-slate-200 rounded-lg">
-          <Image
-            height="125"
-            layout="responsive"
-            width="125"
-            src={item.image}
-          />
+        <div className="overflow-clip w-32 h-32 relative sm:h-48 sm:w-48 bg-slate-200 rounded-lg">
+          <Image height="125" layout="fill" width="125" {...imageProps} />
         </div>
         <div className="overflow-visible flex flex-col justify-start items-center h-12 sm:h-16 mt-2">
           <h5 className="inter m-0 w-full ml-2">{item.name}</h5>
@@ -60,8 +65,21 @@ export default function Shop({ items }: { items: itemType[] }) {
   );
 }
 
-export function getStaticProps() {
-  const items: itemType[] = [
+export async function getStaticProps() {
+  const items: itemType[] = (await client.fetch(`*[_type == "product"]`)).map(
+    (item) => {
+      return {
+        name: item.name,
+        suggestedPrice: item.suggestedPrice * 100,
+        description: item.description,
+        slug: item.name.replaceAll(" ", "-"),
+        stockCount: item.stockCount,
+        image: item.image,
+      };
+    }
+  );
+  console.log(items);
+  const items2: itemType[] = [
     {
       name: "Power Consumption Moniter",
       image: "/items/power",

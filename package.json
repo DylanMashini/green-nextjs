@@ -18,6 +18,8 @@
     "mongodb": "^4.5.0",
     "next": "^12.2.2",
     "next-plugin-preact": "^3.0.7",
+    "next-sanity": "^1.0.0",
+    "next-sanity-image": "^4.1.0",
     "postcss": "^8.4.17",
     "preact": "^10.10.0",
     "preact-render-to-string": "^5.2.1",
