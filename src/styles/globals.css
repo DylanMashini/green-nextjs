@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* variable decleration */
 :root {
   --footer-height: 20vh;
@@ -17,6 +18,11 @@ h6 {
   font-family: "Raleway", sans-serif;
   /* text drop shaddow */
   text-shadow: 0.5px 0.5px 0.5px rgb(111, 111, 111);
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  text-shadow: none;
 }
 
 p,
