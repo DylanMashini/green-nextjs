@@ -2,27 +2,27 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { CssBaseline } from "@nextui-org/react";
 
 class MyDocument extends Document {
-	static async getInitialProps(ctx) {
-		const initialProps = await Document.getInitialProps(ctx);
-		return {
-			...initialProps,
-			styles: <>{initialProps.styles}</>,
-		};
-	}
+  static async getInitialProps(ctx: any) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return {
+      ...initialProps,
+      styles: <>{initialProps.styles}</>,
+    };
+  }
 
-	render() {
-		return (
-			<Html lang="en">
-				<Head>
-					{CssBaseline.flush()}
-					{/* Global Site Tag (gtag.js) - Google Analytics */}
-					<script
-						async
-						src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-					/>
-					<script
-						dangerouslySetInnerHTML={{
-							__html: `
+  render() {
+    return (
+      <Html lang="en">
+        <Head>
+          {CssBaseline.flush()}
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -30,16 +30,20 @@ class MyDocument extends Document {
               page_path: window.location.pathname,
             });
           `,
-						}}
-					/>
-				</Head>
-				<body>
-					<Main />
-					<NextScript />
-				</body>
-			</Html>
-		);
-	}
+            }}
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code&family=Lato&family=Montserrat&family=News+Cycle&family=Raleway:wght@300&family=Roboto+Condensed:ital@1&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
 
 export default MyDocument;
