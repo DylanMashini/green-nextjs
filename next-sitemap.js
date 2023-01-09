@@ -3,5 +3,5 @@
 module.exports = {
 	siteUrl: process.env.SITE_URL || "https://www.mygreenearth.org/",
 	generateRobotsTxt: true,
-	exclude: ["/admin/*"],
+	exclude: ["/admin/*", "/admin"],
 };
