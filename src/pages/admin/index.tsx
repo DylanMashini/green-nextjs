@@ -5,6 +5,7 @@ import { MongoClient } from "mongodb";
 import server from "../../../server";
 
 export default function AdminHome({ events }) {
+	console.log("HERE");
 	const router = useRouter();
 	const deleteEvent = id => {
 		if (!confirm("Are you sure you want to delete this event?")) {
